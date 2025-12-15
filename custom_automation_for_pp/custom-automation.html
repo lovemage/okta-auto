@@ -99,10 +99,13 @@
           <div class="@container w-full">
             <div class="p-0 sm:p-4">
               <div
-                class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
-                data-alt="A dynamic shot of a sophisticated, clean automation line in operation."
-                style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB6elawPjY1LfJ5Y9h0AO5idI9lCQWb4JfdWZ0rtzePHkaOeWn1hXP2B8oQCJrPGiLPB0k2Gp-xYSL0I6neIiE_8uTloVZi6ifxe2afeJxEsNucWHxXOedMTw8vZJW18gMrX0r5lMFiFtT9OXwpo9oUdI76JDpT92fGIRCUJojm0rGD3GCaefigfE69SyFaVl6UZr6V9GccS2QWT5bj4tg56bztHc0nuTXWQqYcoXVd5GDnAlh3MISQnXfT6q9iTYpBj5vfsoDV7r-C");'>
-                <div class="flex flex-col gap-2 text-left max-w-2xl">
+                class="relative flex min-h-[480px] flex-col gap-6 overflow-hidden bg-black bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                data-alt="A dynamic shot of a sophisticated, clean automation line in operation.">
+                <video class="absolute inset-0 h-full w-full object-cover" autoplay muted loop playsinline preload="metadata">
+                  <source src="../automation-okta.mp4" type="video/mp4" />
+                </video>
+                <div class="absolute inset-0" style="background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);"></div>
+                <div class="relative flex flex-col gap-2 text-left max-w-2xl">
                   <h1
                     class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
                     Precision Customization: Your Partner for Automated Plastic Manufacturing (PP, PET, PS)</h1>
