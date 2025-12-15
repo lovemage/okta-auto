@@ -15,13 +15,17 @@
     <meta name="robots" content="index,follow" />
     <meta property="og:type" content="article" />
     <meta property="og:site_name" content="Okta Automation" />
-    <meta property="og:title" content="In-Mold Labeling (IML) Solutions: Definition, Methods, and Benefits | Okta Automation" />
-    <meta property="og:description" content="Learn about In-Mold Labeling (IML), an innovative single-step labeling process. Explore its definition, core methods like injection molding, key advantages in durability and branding, and common applications with Okta Automation, your expert in professional factory automated systems." />
+    <meta property="og:title"
+        content="In-Mold Labeling (IML) Solutions: Definition, Methods, and Benefits | Okta Automation" />
+    <meta property="og:description"
+        content="Learn about In-Mold Labeling (IML), an innovative single-step labeling process. Explore its definition, core methods like injection molding, key advantages in durability and branding, and common applications with Okta Automation, your expert in professional factory automated systems." />
     <meta property="og:url" content="https://okta-auto.com/in-mold_labeling_(iml)_solutions/iml-solutions.html" />
     <meta property="og:image" content="https://okta-auto.com/logo.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="In-Mold Labeling (IML) Solutions: Definition, Methods, and Benefits | Okta Automation" />
-    <meta name="twitter:description" content="Learn about In-Mold Labeling (IML), an innovative single-step labeling process. Explore its definition, core methods like injection molding, key advantages in durability and branding, and common applications with Okta Automation, your expert in professional factory automated systems." />
+    <meta name="twitter:title"
+        content="In-Mold Labeling (IML) Solutions: Definition, Methods, and Benefits | Okta Automation" />
+    <meta name="twitter:description"
+        content="Learn about In-Mold Labeling (IML), an innovative single-step labeling process. Explore its definition, core methods like injection molding, key advantages in durability and branding, and common applications with Okta Automation, your expert in professional factory automated systems." />
     <meta name="twitter:image" content="https://okta-auto.com/logo.png" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="../styles.css" rel="stylesheet" />
@@ -65,8 +69,6 @@
                 <div class="flex items-center justify-between h-16">
                     <a class="flex items-center gap-3" href="../index.html">
                         <img alt="Okta Automation Logo" class="h-16 w-16 object-contain" src="../logo.png" />
-                        <h2 class="text-xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white">Okta
-                            Automation</h2>
                     </a>
                     <div class="hidden md:flex flex-1 items-center justify-end gap-8">
                         <nav class="flex items-center gap-8">
@@ -85,11 +87,28 @@
                         </a>
                     </div>
                     <div class="flex md:hidden">
-                        <button
+                        <button id="mobile-menu-button"
                             class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary">
-                            <img src="../icon/interface-control-svgrepo-com.svg" class="w-6 h-6" alt="menu">
+                            <img src="../menu.svg" class="w-6 h-6" alt="menu">
                         </button>
                     </div>
+                </div>
+            </div>
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="hidden md:hidden bg-background-light dark:bg-background-dark border-b border-gray-200 dark:border-gray-800"
+                id="mobile-menu">
+                <div class="space-y-1 px-4 pb-3 pt-2">
+                    <a href="../index.html"
+                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary dark:text-gray-200 dark:hover:bg-gray-800">Home</a>
+                    <a href="../in-mold_labeling_(iml)_solutions/iml-solutions.html"
+                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary dark:text-gray-200 dark:hover:bg-gray-800">IML
+                        Solutions</a>
+                    <a href="../custom_automation_for_pp/custom-automation.html"
+                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary dark:text-gray-200 dark:hover:bg-gray-800">Custom
+                        Automation</a>
+                    <a href="../okta_automation_contact_us/contact.html"
+                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary dark:text-gray-200 dark:hover:bg-gray-800">Request
+                        a Quote</a>
                 </div>
             </div>
         </header>
@@ -150,7 +169,7 @@
                         <div class="rounded-xl overflow-hidden shadow-lg">
                             <img class="w-full h-auto object-cover"
                                 data-alt="A diagram comparing the traditional labeling process with the streamlined in-mold labeling process."
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAQcrVd318gWlR370Ngrp0tetK_YIS5xrOJwM3n8SV7CGhdb1idfqofdSJEXExVuyC4tTBn3JLrQ80dqFF9G5bL6mEwPRiP4Xxczn1yAdmLMpT0gDFwKn_w4g2rJZ4vHLcaAfZN-ZdS8W5feiDyVX1Lf7CMHd2OPqvNzNvLF0UihUr4XDIrxTU_OuIy8oGqqFXy3LftwI9n6fw2loiBHou1sJK6KzWydlsNsaWCES00pJ2IWupQDeEKvNQyVX1Xnt2DPbMQ3ucP9Dd" />
+                                src="../inmold-okta (2).png" />
                         </div>
                     </div>
                 </div>
@@ -315,13 +334,14 @@
                     <p class="site-footer__copyright">&copy; 2024 Okta Automation. All rights reserved.</p>
                     <div class="site-footer__links">
                         <a class="site-footer__link" href="../about.html">About Us</a>
-                        <a class="site-footer__link" href="#">Privacy Policy</a>
-                        <a class="site-footer__link" href="#">Terms of Service</a>
+                        <a class="site-footer__link" href="../privacy-policy.html">Privacy Policy</a>
+                        <a class="site-footer__link" href="../terms-of-service.html">Terms of Service</a>
                     </div>
                 </div>
             </div>
         </footer>
     </div>
+    <script src="../script.js"></script>
 </body>
 
 </html>

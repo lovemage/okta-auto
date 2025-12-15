@@ -7,18 +7,21 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <link rel="icon" type="image/png" href="../logo.png" />
   <link rel="apple-touch-icon" href="../logo.png" />
-  <meta name="description" content="Custom automated plastic manufacturing solutions for PP, PET, and PS. Okta Automation delivers high-performance, custom-built automation systems tailored to your production needs." />
+  <meta name="description"
+    content="Custom automated plastic manufacturing solutions for PP, PET, and PS. Okta Automation delivers high-performance, custom-built automation systems tailored to your production needs." />
   <link rel="canonical" href="https://okta-auto.com/custom_automation_for_pp/custom-automation.html" />
   <meta name="robots" content="index,follow" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Okta Automation" />
   <meta property="og:title" content="Okta Automation - Custom Plastic Manufacturing Solutions" />
-  <meta property="og:description" content="Custom automated plastic manufacturing solutions for PP, PET, and PS. Okta Automation delivers high-performance, custom-built automation systems tailored to your production needs." />
+  <meta property="og:description"
+    content="Custom automated plastic manufacturing solutions for PP, PET, and PS. Okta Automation delivers high-performance, custom-built automation systems tailored to your production needs." />
   <meta property="og:url" content="https://okta-auto.com/custom_automation_for_pp/custom-automation.html" />
   <meta property="og:image" content="https://okta-auto.com/logo.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Okta Automation - Custom Plastic Manufacturing Solutions" />
-  <meta name="twitter:description" content="Custom automated plastic manufacturing solutions for PP, PET, and PS. Okta Automation delivers high-performance, custom-built automation systems tailored to your production needs." />
+  <meta name="twitter:description"
+    content="Custom automated plastic manufacturing solutions for PP, PET, and PS. Okta Automation delivers high-performance, custom-built automation systems tailored to your production needs." />
   <meta name="twitter:image" content="https://okta-auto.com/logo.png" />
   <title>Okta Automation - Custom Plastic Manufacturing Solutions</title>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -66,8 +69,6 @@
           <div class="flex items-center justify-between h-16">
             <a class="flex items-center gap-3" href="../index.html">
               <img alt="Okta Automation Logo" class="h-16 w-16 object-contain" src="../logo.png" />
-              <h2 class="text-xl font-bold leading-tight tracking-tight text-text-light dark:text-text-dark">Okta
-                Automation</h2>
             </a>
             <div class="hidden md:flex flex-1 items-center justify-end gap-8">
               <nav class="flex items-center gap-8">
@@ -75,9 +76,6 @@
                   href="../index.html">Home</a>
                 <a class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-secondary transition-colors"
                   href="../in-mold_labeling_(iml)_solutions/iml-solutions.html">IML Solutions</a>
-                <a class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-secondary transition-colors"
-                  href="../custom_automation_for_pp/custom-automation.html">Custom Automation (PP/PET/PS)</a>
-
               </nav>
               <a href="../okta_automation_contact_us/contact.html"
                 class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-colors">
@@ -85,11 +83,29 @@
               </a>
             </div>
             <div class="flex md:hidden">
-              <button
+              <button id="mobile-menu-button"
                 class="inline-flex items-center justify-center p-2 rounded-md text-text-light dark:text-text-dark hover:text-primary dark:hover:text-secondary hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary">
-                <img src="../icon/interface-control-svgrepo-com.svg" class="w-6 h-6" alt="menu">
+                <img src="../menu.svg" class="w-6 h-6" alt="menu">
               </button>
             </div>
+          </div>
+        </div>
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div
+          class="hidden md:hidden bg-background-light dark:bg-background-dark border-b border-gray-200 dark:border-gray-800"
+          id="mobile-menu">
+          <div class="space-y-1 px-4 pb-3 pt-2">
+            <a href="../index.html"
+              class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary dark:text-gray-200 dark:hover:bg-gray-800">Home</a>
+            <a href="../in-mold_labeling_(iml)_solutions/iml-solutions.html"
+              class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary dark:text-gray-200 dark:hover:bg-gray-800">IML
+              Solutions</a>
+            <a href="../custom_automation_for_pp/custom-automation.html"
+              class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary dark:text-gray-200 dark:hover:bg-gray-800">Custom
+              Automation</a>
+            <a href="../okta_automation_contact_us/contact.html"
+              class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary dark:text-gray-200 dark:hover:bg-gray-800">Request
+              a Quote</a>
           </div>
         </div>
       </header>
@@ -442,11 +458,14 @@
                 </div>
               </div>
             </div>
-            <div class="w-full lg:w-2/5 aspect-square rounded-lg overflow-hidden relative bg-black" data-alt="Automation video">
-              <video id="technicalEdgeVideo" class="h-full w-full object-cover" controls preload="metadata" poster="../automation-cola.png">
+            <div class="w-full lg:w-2/5 aspect-square rounded-lg overflow-hidden relative bg-black"
+              data-alt="Automation video">
+              <video id="technicalEdgeVideo" class="h-full w-full object-cover" controls preload="metadata"
+                poster="../automation-cola.png">
                 <source src="../automation-okta.mp4" type="video/mp4" />
               </video>
-              <div id="technicalEdgeVideoLoader" class="absolute inset-x-4 bottom-4 rounded-lg bg-black/60 text-white px-3 py-2">
+              <div id="technicalEdgeVideoLoader"
+                class="absolute inset-x-4 bottom-4 rounded-lg bg-black/60 text-white px-3 py-2">
                 <div class="flex items-center justify-between text-xs font-medium">
                   <span>Loading video</span>
                   <span id="technicalEdgeVideoPct">0%</span>
@@ -516,8 +535,8 @@
             <p class="site-footer__copyright">&copy; 2024 Okta Automation. All rights reserved.</p>
             <div class="site-footer__links">
               <a class="site-footer__link" href="../about.html">About Us</a>
-              <a class="site-footer__link" href="#">Privacy Policy</a>
-              <a class="site-footer__link" href="#">Terms of Service</a>
+              <a class="site-footer__link" href="../privacy-policy.html">Privacy Policy</a>
+              <a class="site-footer__link" href="../terms-of-service.html">Terms of Service</a>
             </div>
           </div>
         </div>
@@ -526,54 +545,55 @@
   </div>
 
   <script>
-    (function () {
-      const video = document.getElementById('technicalEdgeVideo');
-      const loader = document.getElementById('technicalEdgeVideoLoader');
-      const bar = document.getElementById('technicalEdgeVideoBar');
-      const pct = document.getElementById('technicalEdgeVideoPct');
-      if (!video || !loader || !bar || !pct) return;
+      (function () {
+        const video = document.getElementById('technicalEdgeVideo');
+        const loader = document.getElementById('technicalEdgeVideoLoader');
+        const bar = document.getElementById('technicalEdgeVideoBar');
+        const pct = document.getElementById('technicalEdgeVideoPct');
+        if (!video || !loader || !bar || !pct) return;
 
-      const setProgress = (value) => {
-        const v = Math.max(0, Math.min(1, value || 0));
-        bar.style.width = (v * 100).toFixed(0) + '%';
-        pct.textContent = (v * 100).toFixed(0) + '%';
-      };
+        const setProgress = (value) => {
+          const v = Math.max(0, Math.min(1, value || 0));
+          bar.style.width = (v * 100).toFixed(0) + '%';
+          pct.textContent = (v * 100).toFixed(0) + '%';
+        };
 
-      const updateFromBuffer = () => {
-        if (!video.duration || !isFinite(video.duration) || video.buffered.length === 0) {
-          setProgress(0);
-          return;
-        }
-        const end = video.buffered.end(video.buffered.length - 1);
-        setProgress(end / video.duration);
-      };
+        const updateFromBuffer = () => {
+          if (!video.duration || !isFinite(video.duration) || video.buffered.length === 0) {
+            setProgress(0);
+            return;
+          }
+          const end = video.buffered.end(video.buffered.length - 1);
+          setProgress(end / video.duration);
+        };
 
-      loader.style.display = 'block';
-      setProgress(0);
-
-      video.addEventListener('loadstart', () => {
         loader.style.display = 'block';
         setProgress(0);
-      });
-      video.addEventListener('progress', updateFromBuffer);
-      video.addEventListener('loadedmetadata', updateFromBuffer);
-      video.addEventListener('canplay', () => {
-        updateFromBuffer();
-        loader.style.display = 'none';
-      });
-      video.addEventListener('waiting', () => {
-        loader.style.display = 'block';
-        updateFromBuffer();
-      });
-      video.addEventListener('playing', () => {
-        loader.style.display = 'none';
-      });
-      video.addEventListener('error', () => {
-        loader.style.display = 'block';
-        pct.textContent = 'Error';
-      });
-    })();
+
+        video.addEventListener('loadstart', () => {
+          loader.style.display = 'block';
+          setProgress(0);
+        });
+        video.addEventListener('progress', updateFromBuffer);
+        video.addEventListener('loadedmetadata', updateFromBuffer);
+        video.addEventListener('canplay', () => {
+          updateFromBuffer();
+          loader.style.display = 'none';
+        });
+        video.addEventListener('waiting', () => {
+          loader.style.display = 'block';
+          updateFromBuffer();
+        });
+        video.addEventListener('playing', () => {
+          loader.style.display = 'none';
+        });
+        video.addEventListener('error', () => {
+          loader.style.display = 'block';
+          pct.textContent = 'Error';
+        });
+      })();
   </script>
+  <script src="../script.js"></script>
 </body>
 
 </html>

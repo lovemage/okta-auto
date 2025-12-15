@@ -7,18 +7,21 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <link rel="icon" type="image/png" href="../logo.png" />
     <link rel="apple-touch-icon" href="../logo.png" />
-    <meta name="description" content="Contact Okta Automation for quotes, consultations, and support for professional factory automated systems and robotic solutions." />
+    <meta name="description"
+        content="Contact Okta Automation for quotes, consultations, and support for professional factory automated systems and robotic solutions." />
     <link rel="canonical" href="https://okta-auto.com/okta_automation_contact_us/contact.html" />
     <meta name="robots" content="index,follow" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Okta Automation" />
     <meta property="og:title" content="Okta Automation - Contact Us" />
-    <meta property="og:description" content="Contact Okta Automation for quotes, consultations, and support for professional factory automated systems and robotic solutions." />
+    <meta property="og:description"
+        content="Contact Okta Automation for quotes, consultations, and support for professional factory automated systems and robotic solutions." />
     <meta property="og:url" content="https://okta-auto.com/okta_automation_contact_us/contact.html" />
     <meta property="og:image" content="https://okta-auto.com/logo.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Okta Automation - Contact Us" />
-    <meta name="twitter:description" content="Contact Okta Automation for quotes, consultations, and support for professional factory automated systems and robotic solutions." />
+    <meta name="twitter:description"
+        content="Contact Okta Automation for quotes, consultations, and support for professional factory automated systems and robotic solutions." />
     <meta name="twitter:image" content="https://okta-auto.com/logo.png" />
     <title>Okta Automation - Contact Us</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -61,8 +64,6 @@
                 <div class="flex items-center justify-between h-16">
                     <a class="flex items-center gap-3" href="../index.html">
                         <img alt="Okta Automation Logo" class="h-16 w-16 object-contain" src="../logo.png" />
-                        <h2 class="text-xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white">Okta
-                            Automation</h2>
                     </a>
                     <div class="hidden md:flex flex-1 items-center justify-end gap-8">
                         <nav class="flex items-center gap-8">
@@ -73,7 +74,6 @@
                             <a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
                                 href="../custom_automation_for_pp/custom-automation.html">Custom Automation
                                 (PP/PET/PS)</a>
-
                         </nav>
                         <a href="../okta_automation_contact_us/contact.html"
                             class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
@@ -81,11 +81,28 @@
                         </a>
                     </div>
                     <div class="flex md:hidden">
-                        <button
+                        <button id="mobile-menu-button"
                             class="inline-flex items-center justify-center p-2 rounded-md text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary">
-                            <img src="../icon/interface-control-svgrepo-com.svg" class="w-6 h-6" alt="menu">
+                            <img src="../menu.svg" class="w-6 h-6" alt="menu">
                         </button>
                     </div>
+                </div>
+            </div>
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="hidden md:hidden bg-background-light dark:bg-background-dark border-b border-gray-200 dark:border-gray-800"
+                id="mobile-menu">
+                <div class="space-y-1 px-4 pb-3 pt-2">
+                    <a href="../index.html"
+                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary dark:text-gray-200 dark:hover:bg-gray-800">Home</a>
+                    <a href="../in-mold_labeling_(iml)_solutions/iml-solutions.html"
+                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary dark:text-gray-200 dark:hover:bg-gray-800">IML
+                        Solutions</a>
+                    <a href="../custom_automation_for_pp/custom-automation.html"
+                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary dark:text-gray-200 dark:hover:bg-gray-800">Custom
+                        Automation</a>
+                    <a href="../okta_automation_contact_us/contact.html"
+                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary dark:text-gray-200 dark:hover:bg-gray-800">Request
+                        a Quote</a>
                 </div>
             </div>
         </header>
@@ -94,7 +111,8 @@
                 <div class="max-w-7xl mx-auto">
                     <!-- PageHeading -->
                     <div class="text-center mb-12">
-                        <img src="../automation-cola.png" alt="Automation" class="mx-auto mb-8 w-full max-w-3xl rounded-xl shadow-sm border border-gray-200/60 dark:border-gray-700/60" />
+                        <img src="../automation-cola.png" alt="Automation"
+                            class="mx-auto mb-8 w-full max-w-3xl rounded-xl shadow-sm border border-gray-200/60 dark:border-gray-700/60" />
                         <h1
                             class="text-[#111518] dark:text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">
                             Contact Our Automation Experts</h1>
@@ -108,7 +126,8 @@
                         <!-- Left Column: Form -->
                         <div
                             class="lg:col-span-3 bg-white dark:bg-gray-800/50 p-8 rounded-xl shadow-sm border border-gray-200/60 dark:border-gray-700/60">
-                            <form name="contact" method="POST" action="/thanks.html" data-netlify="true" class="space-y-6">
+                            <form name="contact" method="POST" action="/thanks.html" data-netlify="true"
+                                class="space-y-6">
                                 <input type="hidden" name="form-name" value="contact" />
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                     <label class="flex flex-col">
@@ -180,7 +199,8 @@
                                             <img src="../icon/mobile-app-svgrepo-com.svg" class="w-6 h-6" alt="call">
                                         </div>
                                         <span
-                                            class="font-medium text-[#111518] dark:text-gray-300 group-hover:text-primary dark:group-hover:text-primary transition-colors">+886 910852713</span>
+                                            class="font-medium text-[#111518] dark:text-gray-300 group-hover:text-primary dark:group-hover:text-primary transition-colors">+886
+                                            910852713</span>
                                     </a>
                                     <a class="flex items-center gap-4 group" href="mailto:Joshua@oktatrading.co">
                                         <div
@@ -197,7 +217,8 @@
                                             <img src="../icon/intelligent-positioning-svgrepo-com.svg" class="w-6 h-6"
                                                 alt="location_on">
                                         </div>
-                                        <span class="font-medium text-[#111518] dark:text-gray-300">1F, NO. 13, SHANGMING 2nd ST., XITUN DIST., TAICHUNG CITY 407, TAIWAN</span>
+                                        <span class="font-medium text-[#111518] dark:text-gray-300">1F, NO. 13,
+                                            SHANGMING 2nd ST., XITUN DIST., TAICHUNG CITY 407, TAIWAN</span>
                                     </div>
                                 </div>
                             </div>
@@ -223,16 +244,17 @@
             <div class="site-footer__container">
                 <div class="site-footer__row">
                     <img src="../logo.png" alt="Okta Automation" class="h-16 w-16 object-contain mb-4 md:mb-0">
-                    <p class="site-footer__copyright"> 2024 Okta Automation. All rights reserved.</p>
+                    <p class="site-footer__copyright">&copy; 2024 Okta Automation. All rights reserved.</p>
                     <div class="site-footer__links">
                         <a class="site-footer__link" href="../about.html">About Us</a>
-                        <a class="site-footer__link" href="#">Privacy Policy</a>
-                        <a class="site-footer__link" href="#">Terms of Service</a>
+                        <a class="site-footer__link" href="../privacy-policy.html">Privacy Policy</a>
+                        <a class="site-footer__link" href="../terms-of-service.html">Terms of Service</a>
                     </div>
                 </div>
             </div>
         </footer>
     </div>
+    <script src="../script.js"></script>
 </body>
 
 </html>
