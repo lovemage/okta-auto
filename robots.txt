@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://okta-auto.com/sitemap.xml
