@@ -99,13 +99,10 @@
           <div class="@container w-full">
             <div class="p-0 sm:p-4">
               <div
-                class="relative flex min-h-[480px] flex-col gap-6 overflow-hidden bg-black bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
-                data-alt="A dynamic shot of a sophisticated, clean automation line in operation.">
-                <video class="absolute inset-0 h-full w-full object-cover" autoplay muted loop playsinline preload="metadata">
-                  <source src="../automation-okta.mp4" type="video/mp4" />
-                </video>
-                <div class="absolute inset-0" style="background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);"></div>
-                <div class="relative flex flex-col gap-2 text-left max-w-2xl">
+                class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                data-alt="A dynamic shot of a sophisticated, clean automation line in operation."
+                style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB6elawPjY1LfJ5Y9h0AO5idI9lCQWb4JfdWZ0rtzePHkaOeWn1hXP2B8oQCJrPGiLPB0k2Gp-xYSL0I6neIiE_8uTloVZi6ifxe2afeJxEsNucWHxXOedMTw8vZJW18gMrX0r5lMFiFtT9OXwpo9oUdI76JDpT92fGIRCUJojm0rGD3GCaefigfE69SyFaVl6UZr6V9GccS2QWT5bj4tg56bztHc0nuTXWQqYcoXVd5GDnAlh3MISQnXfT6q9iTYpBj5vfsoDV7r-C");'>
+                <div class="flex flex-col gap-2 text-left max-w-2xl">
                   <h1
                     class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
                     Precision Customization: Your Partner for Automated Plastic Manufacturing (PP, PET, PS)</h1>
@@ -445,9 +442,19 @@
                 </div>
               </div>
             </div>
-            <div class="w-full lg:w-2/5 aspect-square bg-cover bg-center rounded-lg"
-              data-alt="A macro shot of a critical, high-precision machine part from an automated system."
-              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAfFcGFPW3vQ51kpLVwMWVb9npm4lnt6I7ERGFQlEXGZ5-WCxV9UFPW84WWizWDXBFGJ_hZfr8MmeDzIwcD2cA4QoI5DB90kJNL0Qh-ctwB7HKtzVvszzVutcoovC9heYnu5czdBtmlzvymbTjq4PDDPoTuUxSfFILQ3Jbb9ZvaAp3Q5x_9biHNlaGjbyNuz-FNXLvwwqP61uAZwWo4UnE2fGawsN7ZwY0fJwSnOH2thlxmsnd9JOCdHF0oJXnuWEoCdFVcKvWKVZq_");'>
+            <div class="w-full lg:w-2/5 aspect-square rounded-lg overflow-hidden relative bg-black" data-alt="Automation video">
+              <video id="technicalEdgeVideo" class="h-full w-full object-cover" controls preload="metadata" poster="../automation-cola.png">
+                <source src="../automation-okta.mp4" type="video/mp4" />
+              </video>
+              <div id="technicalEdgeVideoLoader" class="absolute inset-x-4 bottom-4 rounded-lg bg-black/60 text-white px-3 py-2">
+                <div class="flex items-center justify-between text-xs font-medium">
+                  <span>Loading video</span>
+                  <span id="technicalEdgeVideoPct">0%</span>
+                </div>
+                <div class="mt-2 h-2 w-full rounded-full bg-white/20 overflow-hidden">
+                  <div id="technicalEdgeVideoBar" class="h-full w-0 bg-secondary"></div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- CTA Section -->
@@ -524,6 +531,56 @@
       </footer>
     </div>
   </div>
+
+  <script>
+    (function () {
+      const video = document.getElementById('technicalEdgeVideo');
+      const loader = document.getElementById('technicalEdgeVideoLoader');
+      const bar = document.getElementById('technicalEdgeVideoBar');
+      const pct = document.getElementById('technicalEdgeVideoPct');
+      if (!video || !loader || !bar || !pct) return;
+
+      const setProgress = (value) => {
+        const v = Math.max(0, Math.min(1, value || 0));
+        bar.style.width = (v * 100).toFixed(0) + '%';
+        pct.textContent = (v * 100).toFixed(0) + '%';
+      };
+
+      const updateFromBuffer = () => {
+        if (!video.duration || !isFinite(video.duration) || video.buffered.length === 0) {
+          setProgress(0);
+          return;
+        }
+        const end = video.buffered.end(video.buffered.length - 1);
+        setProgress(end / video.duration);
+      };
+
+      loader.style.display = 'block';
+      setProgress(0);
+
+      video.addEventListener('loadstart', () => {
+        loader.style.display = 'block';
+        setProgress(0);
+      });
+      video.addEventListener('progress', updateFromBuffer);
+      video.addEventListener('loadedmetadata', updateFromBuffer);
+      video.addEventListener('canplay', () => {
+        updateFromBuffer();
+        loader.style.display = 'none';
+      });
+      video.addEventListener('waiting', () => {
+        loader.style.display = 'block';
+        updateFromBuffer();
+      });
+      video.addEventListener('playing', () => {
+        loader.style.display = 'none';
+      });
+      video.addEventListener('error', () => {
+        loader.style.display = 'block';
+        pct.textContent = 'Error';
+      });
+    })();
+  </script>
 </body>
 
 </html>
