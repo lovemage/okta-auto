@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const header = document.getElementById('header');
+    const menuToggle = document.getElementById('mobile-menu-toggle');
+    const menuOverlay = document.getElementById('mobile-menu-overlay');
 
     // Header scroll effect
     window.addEventListener('scroll', () => {
@@ -10,12 +12,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Mobile menu toggle (if added back later)
-    // const menuBtn = document.getElementById('menu-toggle');
-    // const navLinks = document.querySelector('.nav-links');
-    // if (menuBtn) {
-    //     menuBtn.addEventListener('click', () => {
-    //         navLinks.classList.toggle('active');
-    //     });
-    // }
+    // Mobile Menu Toggle
+    if (menuToggle && menuOverlay) {
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+
+            // Prevent body scroll when menu is open
+            if (menuOverlay.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Close menu when clicking a link
+        const navLinks = menuOverlay.querySelectorAll('.mobile-nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                menuOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+    }
 });

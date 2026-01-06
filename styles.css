@@ -185,6 +185,8 @@ img {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 1.25rem;
+  z-index: 1001;
+  /* Above mobile menu */
 }
 
 .logo img {
@@ -194,6 +196,7 @@ img {
 .nav-links {
   display: flex;
   gap: 3rem;
+  align-items: center;
 }
 
 .nav-link {
@@ -208,6 +211,98 @@ img {
 .nav-link.active {
   color: var(--color-text-main);
 }
+
+/* Mobile Menu Toggle (Hamburger) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-text-main);
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+/* Hamburger Animation State */
+.menu-toggle.active .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu-toggle.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+.menu-toggle.active .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -7px);
+}
+
+
+/* Liquid Glass Mobile Overlay */
+.mobile-nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 10, 12, 0.7);
+  /* translucent dark */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  clip-path: circle(0% at 100% 0);
+  transition: clip-path 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  gap: 2rem;
+}
+
+.mobile-nav-overlay.active {
+  clip-path: circle(150% at 100% 0);
+}
+
+.mobile-nav-link {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.mobile-nav-overlay.active .mobile-nav-link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered delay for links */
+.mobile-nav-overlay.active .mobile-nav-link:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.mobile-nav-overlay.active .mobile-nav-link:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.mobile-nav-overlay.active .mobile-nav-link:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.mobile-nav-overlay.active .mobile-nav-link:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
 
 /* Hero Section */
 .hero {
@@ -424,6 +519,11 @@ img {
 
   .nav-links {
     display: none;
-    /* simple hiding for now, would need mobile menu script */
+    /* Hide standard nav */
+  }
+
+  .menu-toggle {
+    display: flex;
+    /* Show hamburger */
   }
 }
