@@ -1,10 +1,21 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.getElementById('header');
 
-    if (mobileMenuButton && mobileMenu) {
-        mobileMenuButton.addEventListener('click', function() {
-            mobileMenu.classList.toggle('hidden');
-        });
-    }
+    // Header scroll effect
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    // Mobile menu toggle (if added back later)
+    // const menuBtn = document.getElementById('menu-toggle');
+    // const navLinks = document.querySelector('.nav-links');
+    // if (menuBtn) {
+    //     menuBtn.addEventListener('click', () => {
+    //         navLinks.classList.toggle('active');
+    //     });
+    // }
 });

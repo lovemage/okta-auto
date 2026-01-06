@@ -1,598 +1,238 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en">
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Custom Automation (PP/PET/PS) - Okta Automation</title>
+
+  <meta name="description" content="Custom automated plastic manufacturing solutions for PP, PET, and PS." />
   <link rel="icon" type="image/png" href="../logo.png" />
-  <link rel="apple-touch-icon" href="../logo.png" />
-  <meta name="description"
-    content="Custom automated plastic manufacturing solutions for PP, PET, and PS. Okta Automation delivers high-performance, custom-built automation systems tailored to your production needs." />
-  <link rel="canonical" href="https://okta-auto.com/custom_automation_for_pp/custom-automation.html" />
-  <meta name="robots" content="index,follow" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Okta Automation" />
-  <meta property="og:title" content="Okta Automation - Custom Plastic Manufacturing Solutions" />
-  <meta property="og:description"
-    content="Custom automated plastic manufacturing solutions for PP, PET, and PS. Okta Automation delivers high-performance, custom-built automation systems tailored to your production needs." />
-  <meta property="og:url" content="https://okta-auto.com/custom_automation_for_pp/custom-automation.html" />
-  <meta property="og:image" content="https://okta-auto.com/logo.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Okta Automation - Custom Plastic Manufacturing Solutions" />
-  <meta name="twitter:description"
-    content="Custom automated plastic manufacturing solutions for PP, PET, and PS. Okta Automation delivers high-performance, custom-built automation systems tailored to your production needs." />
-  <meta name="twitter:image" content="https://okta-auto.com/logo.png" />
-  <title>Okta Automation - Custom Plastic Manufacturing Solutions</title>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Styles -->
   <link href="../styles.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet" />
-
-  <script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "primary": "#0A2342",
-            "secondary": "#FF5722",
-            "background-light": "#f4f6f8",
-            "background-dark": "#101922",
-            "text-light": "#0d141b",
-            "text-dark": "#f4f6f8",
-            "text-muted-light": "#6C757D",
-            "text-muted-dark": "#9ab3c9"
-          },
-          fontFamily: {
-            "display": ["Inter", "sans-serif"]
-          },
-          borderRadius: {
-            "DEFAULT": "0.25rem",
-            "lg": "0.5rem",
-            "xl": "0.75rem",
-            "full": "9999px"
-          },
-        },
-      },
-    }
-  </script>
-
 </head>
 
-<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
-  <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
-    <div class="layout-container flex h-full grow flex-col">
-      <!-- TopNavBar -->
-      <header
-        class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-slate-200/80 dark:border-slate-800/80">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex items-center justify-between h-16">
-            <a class="flex items-center gap-3" href="../index.html">
-              <img alt="Okta Automation Logo" class="h-16 w-16 object-contain" src="../logo.png" />
-            </a>
-            <div class="hidden md:flex flex-1 items-center justify-end gap-8">
-              <nav class="flex items-center gap-8">
-                <a class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-secondary transition-colors"
-                  href="../index.html">Home</a>
-                <a class="text-sm font-medium text-text-light dark:text-text-dark hover:text-primary dark:hover:text-secondary transition-colors"
-                  href="../in-mold_labeling_(iml)_solutions/iml-solutions.html">IML Solutions</a>
-              </nav>
-              <a href="../okta_automation_contact_us/contact.html"
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-colors">
-                <span class="truncate">Request a Quote</span>
-              </a>
-            </div>
-            <div class="flex md:hidden">
-              <button id="mobile-menu-button"
-                class="inline-flex items-center justify-center p-2 rounded-md text-text-light dark:text-text-dark hover:text-primary dark:hover:text-secondary hover:bg-primary/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary">
-                <img src="../menu.svg" class="w-6 h-6" alt="menu">
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- Mobile menu, show/hide based on menu state. -->
-        <div
-          class="hidden md:hidden bg-background-light dark:bg-background-dark border-b border-gray-200 dark:border-gray-800"
-          id="mobile-menu">
-          <div class="space-y-1 px-4 pb-3 pt-2">
-            <a href="../index.html"
-              class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary dark:text-gray-200 dark:hover:bg-gray-800">Home</a>
-            <a href="../in-mold_labeling_(iml)_solutions/iml-solutions.html"
-              class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary dark:text-gray-200 dark:hover:bg-gray-800">IML
-              Solutions</a>
-            <a href="../custom_automation_for_pp/custom-automation.html"
-              class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary dark:text-gray-200 dark:hover:bg-gray-800">Custom
-              Automation</a>
-            <a href="../okta_automation_contact_us/contact.html"
-              class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-primary dark:text-gray-200 dark:hover:bg-gray-800">Request
-              a Quote</a>
-          </div>
-        </div>
-      </header>
-      <main class="flex flex-col items-center">
-        <div class="layout-content-container flex flex-col max-w-[960px] flex-1 w-full">
-          <!-- HeroSection -->
-          <div class="@container w-full">
-            <div class="p-0 sm:p-4">
-              <div
-                class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
-                data-alt="A dynamic shot of a sophisticated, clean automation line in operation."
-                style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB6elawPjY1LfJ5Y9h0AO5idI9lCQWb4JfdWZ0rtzePHkaOeWn1hXP2B8oQCJrPGiLPB0k2Gp-xYSL0I6neIiE_8uTloVZi6ifxe2afeJxEsNucWHxXOedMTw8vZJW18gMrX0r5lMFiFtT9OXwpo9oUdI76JDpT92fGIRCUJojm0rGD3GCaefigfE69SyFaVl6UZr6V9GccS2QWT5bj4tg56bztHc0nuTXWQqYcoXVd5GDnAlh3MISQnXfT6q9iTYpBj5vfsoDV7r-C");'>
-                <div class="flex flex-col gap-2 text-left max-w-2xl">
-                  <h1
-                    class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
-                    Precision Customization: Your Partner for Automated Plastic Manufacturing (PP, PET, PS)</h1>
-                  <h2
-                    class="text-slate-200 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                    Delivering high-performance, custom-built automated systems for PP, PET, and PS production.</h2>
-                </div>
-                <button
-                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-secondary text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-opacity-90 transition-colors">
-                  <span class="truncate">Explore Solutions</span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- FeatureSection (Product/Equipment Overview) -->
-          <div class="flex flex-col gap-10 px-4 py-10 sm:py-20 @container">
-            <div class="flex flex-col gap-4 text-center items-center">
-              <h1
-                class="text-text-light dark:text-text-dark tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
-                Modular &amp; Material-Specific Equipment Design</h1>
-              <p
-                class="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-normal max-w-[720px]">
-                Our systems are engineered with a modular design, allowing for seamless integration and scalability. We
-                provide specialized configurations to handle the unique properties of PP, PET, and PS plastics, ensuring
-                optimal performance and product quality.</p>
-            </div>
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-3 p-0">
-              <div
-                class="flex flex-1 gap-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark p-4 flex-col">
-                <img src="../icon/machine-vision-svgrepo-com.svg" class="w-8 h-8 text-secondary"
-                  alt="precision_manufacturing">
-                <div class="flex flex-col gap-1">
-                  <h2 class="text-text-light dark:text-text-dark text-base font-bold leading-tight">PP (Polypropylene)
-                    Systems</h2>
-                  <p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">
-                    High-speed, durable solutions for packaging and automotive parts.</p>
-                </div>
-              </div>
-              <div
-                class="flex flex-1 gap-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark p-4 flex-col">
-                <img src="../icon/availability-svgrepo-com.svg" class="w-8 h-8 text-secondary" alt="liquor">
-                <div class="flex flex-col gap-1">
-                  <h2 class="text-text-light dark:text-text-dark text-base font-bold leading-tight">PET (Polyethylene
-                    Terephthalate) Systems</h2>
-                  <p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">
-                    Precision systems for clear containers, bottles, and food-grade packaging.</p>
-                </div>
-              </div>
-              <div
-                class="flex flex-1 gap-3 rounded-xl border border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark p-4 flex-col">
-                <img src="../icon/all-covered-svgrepo-com.svg" class="w-8 h-8 text-secondary" alt="inventory_2">
-                <div class="flex flex-col gap-1">
-                  <h2 class="text-text-light dark:text-text-dark text-base font-bold leading-tight">PS (Polystyrene)
-                    Systems</h2>
-                  <p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">
-                    Versatile machinery for consumer products, insulation, and disposable items.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ImageGrid (Key Applications) -->
-          <div class="flex flex-col gap-4 px-4 py-10 sm:py-20 @container bg-white dark:bg-slate-900/50 sm:rounded-xl">
-            <div class="flex flex-col gap-4 text-center items-center">
-              <h1
-                class="text-text-light dark:text-text-dark tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
-                From Concept to Creation: Diverse Applications</h1>
-              <p
-                class="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-normal max-w-[720px]">
-                Explore a range of custom applications our automated systems deliver, from high-volume food packaging to
-                precision medical components.</p>
-            </div>
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4 pt-6">
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
-                  data-alt="Automated production line for polypropylene food containers."
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAklv1ZVKf8XekHuzfoImudS_UxBqy7L_HuH3m9j4GuakEk4rZPHIrB-5ebGYB5FRJ815QWfBh9U8shZ-fhAdmLqeATnak6-jwKOh9NUNFubD_mFUbl6FIdZ6qJ7akwu8z6vDjjled3bhx0P39Z6baYycW9NvQ4hP8uj7NNWd6KrvWOGLVCLqfZZ2VJxCKOvjMKIWmlXnVC6iHGq_3z9Mf7SXsV_QgRPFc2es1TNifgnholfogoIa49j7wUCa_kB06_bKizJzpGK0AG");'>
-                </div>
-                <div>
-                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">PP Food Containers
-                  </p>
-                  <p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">
-                    Automated lines for high-volume production of polypropylene food packaging.</p>
-                </div>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
-                  data-alt="Sterile manufacturing of polystyrene medical trays."
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAch0BQ-LNB0XDQ_8tCrqKezTKNmZZAwE9mSj3ACaGDA8jBfO6vRUpc1sHqOn4Ikgwm-RpGkngZzQMc7h3BCS9OXxOMiQyEPQ6DUkO8Ffe00qAJ2Vyemm5x6Cq7_NIsxTLMNptEePpzjTFY1lLTxvpxI22a6zd20CMtLkQ4ExrNEb58hJz5L8DRog6zz7SHRyP--U57gCYoanLYMKclR-_69QhvmypMTfb-Jj53th65TaOo4O-EFG_rjkTqPg0DfAU11uSH1Pa2my5x");'>
-                </div>
-                <div>
-                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">PS Medical Trays
-                  </p>
-                  <p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">Sterile
-                    and precise manufacturing solutions for polystyrene medical applications.</p>
-                </div>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
-                  data-alt="High-clarity PET beverage bottles on a production line."
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDQcJT5ORyvYLoB7kL3S0SWWcyz0uYql151MpSHErOQhKCTxHRF4DG2-j2aCfNYiOkOkTHo5xY0ApgGc4-E3VFiT_UC3q03BKMUPOpNLrxUYcrOAFBD2St0A_z_vKGaF_qDTHBO4Hb9WqL6OaD5ggGMk_1esB2HhHXGmvpjlBXb_JDw-jwvzBTz3Lpyqgnwe8J2RFQxVreQld1aAHyf9OnQ4Sz4Maagl10iAt6rctcnL-ecqMCoPpc6kh37euWmMg13IsiwJADHPArM");'>
-                </div>
-                <div>
-                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">PET Beverage
-                    Bottles</p>
-                  <p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">
-                    High-clarity and strength-focused systems for PET bottle manufacturing.</p>
-                </div>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg"
-                  data-alt="Custom-molded polypropylene automotive components."
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCDb_2KdUvEGw77a3WF1WVFy6RJ7pASrJ3iiaW0U6K0fFZYl07_bNFPfu9ALWeYePpPAiCNXOmiZswjVszXhEHpp5I3JrzOkDpMlrrO8W1mUadeCglY0wSUs04hyk3Sr8-Pd1o5vxJesGVKbgtT44_vc9TZy1taXUee8m9aRHTr9JOyZGFTqJ7grxsuVsYd_0rQC5ciNf_PKf1215MCDcl04L6j7otq_pDzej8plvhSONGaJ4qci3qjVYrlGrmWjAUXNlOp2CSNuFFW");'>
-                </div>
-                <div>
-                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Custom PP
-                    Automotive Parts</p>
-                  <p class="text-text-muted-light dark:text-text-muted-dark text-sm font-normal leading-normal">Bespoke
-                    automation for complex and durable automotive components.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Products Section -->
-          <div
-            class="flex flex-col gap-10 px-4 py-10 sm:py-20 @container bg-white dark:bg-slate-900/50 sm:rounded-xl my-4">
-            <div class="flex flex-col gap-4 text-center items-center">
-              <h1
-                class="text-text-light dark:text-text-dark tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
-                Featured Components & Molds</h1>
-              <p
-                class="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-normal max-w-[720px]">
-                Explore our range of high-precision molds and components designed for optimal performance.</p>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-6">
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg shadow-sm"
-                  style='background-image: url("../products/26mm cap forming part.webp");'></div>
-                <div>
-                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">26mm Cap Forming
-                    Part</p>
-                </div>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg shadow-sm"
-                  style='background-image: url("../products/38mm bottle embryo.webp");'></div>
-                <div>
-                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">38mm Bottle Embryo
-                  </p>
-                </div>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg shadow-sm"
-                  style='background-image: url("../products/injection mould.webp");'></div>
-                <div>
-                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Injection Mold</p>
-                </div>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg shadow-sm"
-                  style='background-image: url("../products/One out 32 outer cover.webp");'></div>
-                <div>
-                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">32-Cavity Outer
-                    Cover Mold</p>
-                </div>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg shadow-sm"
-                  style='background-image: url("../products/Applicable to Krones machine.webp");'></div>
-                <div>
-                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Krones Machine
-                    Compatible Part</p>
-                </div>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg shadow-sm"
-                  style='background-image: url("../products/Applicable to Huihe machine integrated non linkage.webp");'>
-                </div>
-                <div>
-                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Huihe Machine
-                    Component</p>
-                </div>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg shadow-sm"
-                  style='background-image: url("../products/Part drawing of embryo injection.webp");'></div>
-                <div>
-                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Embryo Injection
-                    Design</p>
-                </div>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg shadow-sm"
-                  style='background-image: url("../products/ABUIABACGAAg0JD4kgYo3pykRDDYBDibBA.webp");'></div>
-                <div>
-                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Precision Molded
-                    Component</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Timeline Section -->
-          <div class="flex flex-col gap-10 px-4 py-10 sm:py-20 @container">
-            <div class="flex flex-col gap-4 text-center items-center">
-              <h1
-                class="text-text-light dark:text-text-dark tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
-                Your Project, Our Proven 5-Step Process</h1>
-              <p
-                class="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-normal max-w-[720px]">
-                We follow a structured, transparent process to take your custom automation project from initial concept
-                to full-scale production, ensuring quality and alignment at every stage.</p>
-            </div>
-            <div class="grid grid-cols-[40px_1fr] gap-x-4 px-4 pt-6">
-              <div class="flex flex-col items-center gap-2 pt-1">
-                <div
-                  class="flex items-center justify-center size-10 rounded-full bg-secondary/10 dark:bg-secondary/20 text-secondary">
-                  <img src="../icon/mail-reception-svgrepo-com.svg" class="w-6 h-6" alt="groups">
-                </div>
-                <div class="w-[2px] bg-slate-200 dark:bg-slate-800 h-full grow"></div>
-              </div>
-              <div class="flex flex-1 flex-col pb-8">
-                <p
-                  class="text-text-muted-light dark:text-text-muted-dark text-sm font-bold leading-normal text-secondary">
-                  STEP 1</p>
-                <p class="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Initial Consultation</p>
-                <p class="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-normal mt-1">We
-                  dive deep into your requirements, production goals, and material specifications to define the project
-                  scope.</p>
-              </div>
-              <div class="flex flex-col items-center gap-2">
-                <div class="w-[2px] bg-slate-200 dark:bg-slate-800 h-full grow"></div>
-                <div
-                  class="flex items-center justify-center size-10 rounded-full bg-secondary/10 dark:bg-secondary/20 text-secondary">
-                  <img src="../icon/page-analysis-svgrepo-com.svg" class="w-6 h-6" alt="draw">
-                </div>
-                <div class="w-[2px] bg-slate-200 dark:bg-slate-800 h-full grow"></div>
-              </div>
-              <div class="flex flex-1 flex-col pb-8">
-                <p
-                  class="text-text-muted-light dark:text-text-muted-dark text-sm font-bold leading-normal text-secondary">
-                  STEP 2</p>
-                <p class="text-text-light dark:text-text-dark text-lg font-bold leading-normal">System Design &amp;
-                  Simulation</p>
-                <p class="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-normal mt-1">Our
-                  engineers create detailed 3D models and run simulations to optimize the design for efficiency and
-                  reliability.</p>
-              </div>
-              <div class="flex flex-col items-center gap-2">
-                <div class="w-[2px] bg-slate-200 dark:bg-slate-800 h-full grow"></div>
-                <div
-                  class="flex items-center justify-center size-10 rounded-full bg-secondary/10 dark:bg-secondary/20 text-secondary">
-                  <img src="../icon/machine-vision-svgrepo-com.svg" class="w-6 h-6" alt="factory">
-                </div>
-                <div class="w-[2px] bg-slate-200 dark:bg-slate-800 h-full grow"></div>
-              </div>
-              <div class="flex flex-1 flex-col pb-8">
-                <p
-                  class="text-text-muted-light dark:text-text-muted-dark text-sm font-bold leading-normal text-secondary">
-                  STEP 3</p>
-                <p class="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Manufacturing &amp;
-                  Assembly</p>
-                <p class="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-normal mt-1">We
-                  fabricate and assemble your custom system using high-quality components and precision engineering.</p>
-              </div>
-              <div class="flex flex-col items-center gap-2">
-                <div class="w-[2px] bg-slate-200 dark:bg-slate-800 h-full grow"></div>
-                <div
-                  class="flex items-center justify-center size-10 rounded-full bg-secondary/10 dark:bg-secondary/20 text-secondary">
-                  <img src="../icon/data-analysis-svgrepo-com.svg" class="w-6 h-6" alt="science">
-                </div>
-                <div class="w-[2px] bg-slate-200 dark:bg-slate-800 h-full grow"></div>
-              </div>
-              <div class="flex flex-1 flex-col pb-8">
-                <p
-                  class="text-text-muted-light dark:text-text-muted-dark text-sm font-bold leading-normal text-secondary">
-                  STEP 4</p>
-                <p class="text-text-light dark:text-text-dark text-lg font-bold leading-normal">Testing &amp; Validation
-                </p>
-                <p class="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-normal mt-1">
-                  Rigorous in-house testing ensures your system meets all performance, safety, and quality standards
-                  before shipment.</p>
-              </div>
-              <div class="flex flex-col items-center gap-2">
-                <div class="w-[2px] bg-slate-200 dark:bg-slate-800 h-full grow"></div>
-                <div
-                  class="flex items-center justify-center size-10 rounded-full bg-secondary/10 dark:bg-secondary/20 text-secondary">
-                  <img src="../icon/safe-and-stable-svgrepo-com.svg" class="w-6 h-6" alt="handshake">
-                </div>
-              </div>
-              <div class="flex flex-1 flex-col">
-                <p
-                  class="text-text-muted-light dark:text-text-muted-dark text-sm font-bold leading-normal text-secondary">
-                  STEP 5</p>
-                <p class="text-text-light dark:text-text-dark text-lg font-bold leading-normal">On-Site Commissioning
-                </p>
-                <p class="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-normal mt-1">Our
-                  team handles installation, integration, and training at your facility to ensure a smooth production
-                  launch.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Technical Edge Section -->
-          <div
-            class="flex flex-col lg:flex-row gap-10 items-center px-4 py-10 sm:py-20 @container bg-white dark:bg-slate-900/50 sm:rounded-xl">
-            <div class="flex flex-col gap-4 flex-1">
-              <h1
-                class="text-text-light dark:text-text-dark tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
-                Technical Edge: Ensuring Quality Across All Materials
-              </h1>
-              <p
-                class="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-normal max-w-[720px]">
-                Our expertise in material-specific engineering is what sets us apart. We design critical components like
-                extrusion heads, molds, and handling systems to precisely match the thermal and mechanical properties of
-                PP, PET, and PS. This ensures superior product quality, minimizes waste, and maximizes production
-                uptime.
-              </p>
-              <div class="flex flex-col gap-4 mt-4">
-                <div class="flex items-start gap-3">
-                  <img src="../icon/port-detection-svgrepo-com.svg" class="w-5 h-5 text-secondary mt-1"
-                    alt="check_circle">
-                  <p class="text-text-muted-light dark:text-text-muted-dark flex-1"><strong
-                      class="text-text-light dark:text-text-dark">Precision Tooling:</strong> Custom-designed molds and
-                    dies for flawless part replication.</p>
-                </div>
-                <div class="flex items-start gap-3">
-                  <img src="../icon/port-detection-svgrepo-com.svg" class="w-5 h-5 text-secondary mt-1"
-                    alt="check_circle">
-                  <p class="text-text-muted-light dark:text-text-muted-dark flex-1"><strong
-                      class="text-text-light dark:text-text-dark">Optimized Temperature Control:</strong> Advanced
-                    heating and cooling systems for material stability.</p>
-                </div>
-                <div class="flex items-start gap-3">
-                  <img src="../icon/port-detection-svgrepo-com.svg" class="w-5 h-5 text-secondary mt-1"
-                    alt="check_circle">
-                  <p class="text-text-muted-light dark:text-text-muted-dark flex-1"><strong
-                      class="text-text-light dark:text-text-dark">Robotic Handling:</strong> Gentle yet rapid robotics
-                    tailored to the finished product's characteristics.</p>
-                </div>
-              </div>
-            </div>
-            <div class="w-full lg:w-2/5 aspect-square rounded-lg overflow-hidden relative bg-black"
-              data-alt="Automation video">
-              <video id="technicalEdgeVideo" class="h-full w-full object-cover" controls preload="metadata"
-                poster="../automation-cola.png">
-                <source src="../automation-okta.mp4" type="video/mp4" />
-              </video>
-              <div id="technicalEdgeVideoLoader"
-                class="absolute inset-x-4 bottom-4 rounded-lg bg-black/60 text-white px-3 py-2">
-                <div class="flex items-center justify-between text-xs font-medium">
-                  <span>Loading video</span>
-                  <span id="technicalEdgeVideoPct">0%</span>
-                </div>
-                <div class="mt-2 h-2 w-full rounded-full bg-white/20 overflow-hidden">
-                  <div id="technicalEdgeVideoBar" class="h-full w-0 bg-secondary"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- CTA Section -->
-          <!-- Automation Production Line Models Section -->
-          <div
-            class="flex flex-col gap-10 px-4 py-10 sm:py-20 @container bg-white dark:bg-slate-900/50 sm:rounded-xl my-4">
-            <div class="flex flex-col gap-4 text-center items-center">
-              <h1
-                class="text-text-light dark:text-text-dark tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
-                Automation Production Line Models</h1>
-              <p
-                class="text-text-muted-light dark:text-text-muted-dark text-base font-normal leading-normal max-w-[720px]">
-                Discover our advanced automated production lines designed for efficiency and precision.</p>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6">
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg shadow-sm"
-                  style='background-image: url("../products/automation/Automatic Production Line of Vacuum Blood Collection Tube.png");'>
-                </div>
-                <div>
-                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Automatic
-                    Production Line of Vacuum Blood Collection Tube</p>
-                </div>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg shadow-sm"
-                  style='background-image: url("../products/automation/In-Mold Labeling Automatic Production Line.png");'>
-                </div>
-                <div>
-                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">In-Mold Labeling
-                    Automatic Production Line</p>
-                </div>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg shadow-sm"
-                  style='background-image: url("../products/automation/PET Preform special machine.png");'></div>
-                <div>
-                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">PET Preform
-                    Special Machine</p>
-                </div>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg shadow-sm"
-                  style='background-image: url("../products/automation/Petri Dish Tack-out and Packing System.png");'>
-                </div>
-                <div>
-                  <p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Petri Dish
-                    Tack-out and Packing System</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-      <footer class="site-footer">
-        <div class="site-footer__container">
-          <div class="site-footer__row">
-            <img src="../logo.png" alt="Okta Automation" class="h-16 w-16 object-contain mb-4 md:mb-0">
-            <p class="site-footer__copyright">&copy; 2024 Okta Automation. All rights reserved.</p>
-            <div class="site-footer__links">
-              <a class="site-footer__link" href="../about.html">About Us</a>
-              <a class="site-footer__link" href="../privacy-policy.html">Privacy Policy</a>
-              <a class="site-footer__link" href="../terms-of-service.html">Terms of Service</a>
-            </div>
-          </div>
-        </div>
-      </footer>
+<body>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <div class="nav-container">
+      <a href="../index.html" class="logo">
+        <img src="../logo.png" alt="Okta Automation Logo">
+        <span>OKTA AUTO</span>
+      </a>
+      <nav class="nav-links">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../in-mold_labeling_(iml)_solutions/iml-solutions.html" class="nav-link">IML Solutions</a>
+        <a href="../custom_automation_for_pp/custom-automation.html" class="nav-link active">Custom Automation</a>
+        <a href="../okta_automation_contact_us/contact.html" class="btn btn-primary"
+          style="padding: 0.5rem 1.5rem; font-size: 0.8rem;">Request Quote</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <script>
-      (function () {
-        const video = document.getElementById('technicalEdgeVideo');
-        const loader = document.getElementById('technicalEdgeVideoLoader');
-        const bar = document.getElementById('technicalEdgeVideoBar');
-        const pct = document.getElementById('technicalEdgeVideoPct');
-        if (!video || !loader || !bar || !pct) return;
+  <main>
 
-        const setProgress = (value) => {
-          const v = Math.max(0, Math.min(1, value || 0));
-          bar.style.width = (v * 100).toFixed(0) + '%';
-          pct.textContent = (v * 100).toFixed(0) + '%';
-        };
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-decoration"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="text-display text-gradient">Custom<br>Automation</h1>
+          <p>
+            High-performance systems engineered for PP, PET, and PS production. We build the future of your
+            manufacturing line.
+          </p>
+          <a href="../okta_automation_contact_us/contact.html" class="btn btn-primary">Start Your Project</a>
+        </div>
+        <div class="hero-visual">
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6elawPjY1LfJ5Y9h0AO5idI9lCQWb4JfdWZ0rtzePHkaOeWn1hXP2B8oQCJrPGiLPB0k2Gp-xYSL0I6neIiE_8uTloVZi6ifxe2afeJxEsNucWHxXOedMTw8vZJW18gMrX0r5lMFiFtT9OXwpo9oUdI76JDpT92fGIRCUJojm0rGD3GCaefigfE69SyFaVl6UZr6V9GccS2QWT5bj4tg56bztHc0nuTXWQqYcoXVd5GDnAlh3MISQnXfT6q9iTYpBj5vfsoDV7r-C"
+            alt="Automation Line">
+        </div>
+      </div>
+    </section>
 
-        const updateFromBuffer = () => {
-          if (!video.duration || !isFinite(video.duration) || video.buffered.length === 0) {
-            setProgress(0);
-            return;
-          }
-          const end = video.buffered.end(video.buffered.length - 1);
-          setProgress(end / video.duration);
-        };
+    <!-- Material Systems -->
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title text-display">Material <span class="text-primary">Mastery</span></h2>
+        <p style="color: var(--color-text-muted);">Modular designs optimized for specific polymer characteristics.</p>
+      </div>
+      <div class="features-grid">
+        <article class="feature-card">
+          <h3>PP Systems</h3>
+          <p>High-speed solutions for Polypropylene packaging and automotive parts.</p>
+        </article>
+        <article class="feature-card">
+          <h3>PET Systems</h3>
+          <p>Precision handling for Polyethylene Terephthalate bottles and clear containers.</p>
+        </article>
+        <article class="feature-card">
+          <h3>PS Systems</h3>
+          <p>Versatile machinery for Polystyrene consumer products and medical trays.</p>
+        </article>
+      </div>
+    </section>
 
-        loader.style.display = 'block';
-        setProgress(0);
+    <!-- Technical Edge / Video -->
+    <section class="section" style="background: rgba(255,255,255,0.02); margin-top: 4rem;">
+      <div class="hero-content" style="gap: 4rem; min-height: auto;">
+        <div class="hero-text">
+          <h2 class="text-display" style="font-size: 2.5rem; margin-bottom: 2rem;">The <span
+              class="text-primary">Technical Edge</span></h2>
+          <ul style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <li style="display: flex; gap: 1rem;">
+              <span style="color: var(--color-primary); font-weight: bold;">01</span>
+              <div>
+                <strong style="color: var(--color-text-main);">Precision Tooling</strong>
+                <p style="color: var(--color-text-muted); font-size: 0.9rem;">Custom molds for flawless part
+                  replication.</p>
+              </div>
+            </li>
+            <li style="display: flex; gap: 1rem;">
+              <span style="color: var(--color-primary); font-weight: bold;">02</span>
+              <div>
+                <strong style="color: var(--color-text-main);">Temp Control</strong>
+                <p style="color: var(--color-text-muted); font-size: 0.9rem;">Advanced heating/cooling for material
+                  stability.</p>
+              </div>
+            </li>
+            <li style="display: flex; gap: 1rem;">
+              <span style="color: var(--color-primary); font-weight: bold;">03</span>
+              <div>
+                <strong style="color: var(--color-text-main);">Robotics</strong>
+                <p style="color: var(--color-text-muted); font-size: 0.9rem;">High-speed handling tailored to product
+                  fragility.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <video controls poster="../automation-cola.png" style="width: 100%; border-radius: var(--radius-md);">
+            <source src="../automation-okta.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
 
-        video.addEventListener('loadstart', () => {
-          loader.style.display = 'block';
-          setProgress(0);
-        });
-        video.addEventListener('progress', updateFromBuffer);
-        video.addEventListener('loadedmetadata', updateFromBuffer);
-        video.addEventListener('canplay', () => {
-          updateFromBuffer();
-          loader.style.display = 'none';
-        });
-        video.addEventListener('waiting', () => {
-          loader.style.display = 'block';
-          updateFromBuffer();
-        });
-        video.addEventListener('playing', () => {
-          loader.style.display = 'none';
-        });
-        video.addEventListener('error', () => {
-          loader.style.display = 'block';
-          pct.textContent = 'Error';
-        });
-      })();
-  </script>
+    <!-- Applications Grid -->
+    <section class="section">
+      <h2 class="section-title text-display" style="margin-bottom: 3rem;">Applications</h2>
+      <div class="features-grid">
+        <!-- App 1 -->
+        <div class="feature-card" style="padding: 0; border: none; background: transparent;">
+          <div
+            style="border-radius: var(--radius-md); overflow: hidden; margin-bottom: 1rem; border: 1px solid var(--color-border);">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAklv1ZVKf8XekHuzfoImudS_UxBqy7L_HuH3m9j4GuakEk4rZPHIrB-5ebGYB5FRJ815QWfBh9U8shZ-fhAdmLqeATnak6-jwKOh9NUNFubD_mFUbl6FIdZ6qJ7akwu8z6vDjjled3bhx0P39Z6baYycW9NvQ4hP8uj7NNWd6KrvWOGLVCLqfZZ2VJxCKOvjMKIWmlXnVC6iHGq_3z9Mf7SXsV_QgRPFc2es1TNifgnholfogoIa49j7wUCa_kB06_bKizJzpGK0AG"
+              alt="PP Food">
+          </div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">PP Food Containers</h3>
+          <p style="font-size: 0.9rem;">High-volume food packaging lines.</p>
+        </div>
+        <!-- App 2 -->
+        <div class="feature-card" style="padding: 0; border: none; background: transparent;">
+          <div
+            style="border-radius: var(--radius-md); overflow: hidden; margin-bottom: 1rem; border: 1px solid var(--color-border);">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAch0BQ-LNB0XDQ_8tCrqKezTKNmZZAwE9mSj3ACaGDA8jBfO6vRUpc1sHqOn4Ikgwm-RpGkngZzQMc7h3BCS9OXxOMiQyEPQ6DUkO8Ffe00qAJ2Vyemm5x6Cq7_NIsxTLMNptEePpzjTFY1lLTxvpxI22a6zd20CMtLkQ4ExrNEb58hJz5L8DRog6zz7SHRyP--U57gCYoanLYMKclR-_69QhvmypMTfb-Jj53th65TaOo4O-EFG_rjkTqPg0DfAU11uSH1Pa2my5x"
+              alt="Medical">
+          </div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">PS Medical Trays</h3>
+          <p style="font-size: 0.9rem;">Sterile manufacturing solutions.</p>
+        </div>
+        <!-- App 3 -->
+        <div class="feature-card" style="padding: 0; border: none; background: transparent;">
+          <div
+            style="border-radius: var(--radius-md); overflow: hidden; margin-bottom: 1rem; border: 1px solid var(--color-border);">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQcJT5ORyvYLoB7kL3S0SWWcyz0uYql151MpSHErOQhKCTxHRF4DG2-j2aCfNYiOkOkTHo5xY0ApgGc4-E3VFiT_UC3q03BKMUPOpNLrxUYcrOAFBD2St0A_z_vKGaF_qDTHBO4Hb9WqL6OaD5ggGMk_1esB2HhHXGmvpjlBXb_JDw-jwvzBTz3Lpyqgnwe8J2RFQxVreQld1aAHyf9OnQ4Sz4Maagl10iAt6rctcnL-ecqMCoPpc6kh37euWmMg13IsiwJADHPArM"
+              alt="PET Bottles">
+          </div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">PET Bottles</h3>
+          <p style="font-size: 0.9rem;">High-clarity beverage production.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5-Step Process -->
+    <section class="section">
+      <div style="text-align: center; margin-bottom: 4rem;">
+        <h2 class="text-display" style="font-size: 2.5rem;">Our Process</h2>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+        <div style="flex: 1; min-width: 200px; text-align: center;">
+          <div style="color: var(--color-primary); font-size: 3rem; font-weight: bold; opacity: 0.2;">01</div>
+          <h4 style="margin-top: -1.5rem; color: var(--color-text-main);">Consultation</h4>
+        </div>
+        <div style="flex: 1; min-width: 200px; text-align: center;">
+          <div style="color: var(--color-primary); font-size: 3rem; font-weight: bold; opacity: 0.2;">02</div>
+          <h4 style="margin-top: -1.5rem; color: var(--color-text-main);">Design</h4>
+        </div>
+        <div style="flex: 1; min-width: 200px; text-align: center;">
+          <div style="color: var(--color-primary); font-size: 3rem; font-weight: bold; opacity: 0.2;">03</div>
+          <h4 style="margin-top: -1.5rem; color: var(--color-text-main);">Assembly</h4>
+        </div>
+        <div style="flex: 1; min-width: 200px; text-align: center;">
+          <div style="color: var(--color-primary); font-size: 3rem; font-weight: bold; opacity: 0.2;">04</div>
+          <h4 style="margin-top: -1.5rem; color: var(--color-text-main);">Testing</h4>
+        </div>
+        <div style="flex: 1; min-width: 200px; text-align: center;">
+          <div style="color: var(--color-primary); font-size: 3rem; font-weight: bold; opacity: 0.2;">05</div>
+          <h4 style="margin-top: -1.5rem; color: var(--color-text-main);">Launch</h4>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-col" style="flex: 2;">
+        <div class="logo" style="margin-bottom: 1rem;">
+          <img src="../logo.png" alt="Logo" style="height: 32px;">
+          <span>OKTA AUTO</span>
+        </div>
+        <p style="color: var(--color-text-muted); max-width: 400px;">
+          Redefining possible through advanced robotics and custom automation solutions.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Solutions</h4>
+        <div class="footer-links">
+          <a href="../in-mold_labeling_(iml)_solutions/iml-solutions.html">IML Solutions</a>
+          <a href="../custom_automation_for_pp/custom-automation.html">Custom Automation</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <div class="footer-links">
+          <a href="../about.html">About Us</a>
+          <a href="../privacy-policy.html">Privacy Policy</a>
+          <a href="../terms-of-service.html">Terms of Service</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <div class="footer-links">
+          <a href="../okta_automation_contact_us/contact.html">Contact Support</a>
+          <a href="mailto:info@okta-auto.com">info@okta-auto.com</a>
+        </div>
+      </div>
+    </div>
+    <div
+      style="max-width: 1400px; margin: 2rem auto 0; padding: 2rem 0 0; border-top: 1px solid var(--color-border); text-align: center; color: var(--color-text-muted); font-size: 0.8rem;">
+      &copy; 2024 Okta Automation. All rights reserved.
+    </div>
+  </footer>
+
   <script src="../script.js"></script>
 </body>
 
