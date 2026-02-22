@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>اتصل بنا - Okta Automation</title>
+
+    <meta name="description" content="احصل على عرض سعر لمشروع الأتمتة الخاص بك." />
+    <link rel="icon" type="image/png" href="../../logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="../../styles.css" rel="stylesheet" />
+    <style>
+        :root {
+            --font-arabic: 'Noto Sans Arabic', system-ui, sans-serif;
+        }
+        body {
+            font-family: var(--font-arabic);
+        }
+        .text-display {
+            font-family: var(--font-arabic);
+        }
+        .lang-switch {
+            margin-right: 1rem;
+            margin-left: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <img src="../../logo.png" alt="Okta Automation Logo">
+                <span>OKTA AUTO</span>
+            </a>
+            <nav class="nav-links">
+                <a href="../index.html" class="nav-link">الرئيسية</a>
+                <a href="../in-mold_labeling_(iml)_solutions/iml-solutions.html" class="nav-link">حلول IML</a>
+                <a href="../custom_automation_for_pp/custom-automation.html" class="nav-link">الأتمتة المخصصة</a>
+                <a href="./contact.html" class="btn btn-primary"
+                    style="padding: 0.5rem 1.5rem; font-size: 0.8rem;">طلب عرض سعر</a>
+            </nav>
+
+            <div class="lang-switch" style="display: flex; gap: 0.5rem;">
+                <a href="../../okta_automation_contact_us/contact.html" style="color: var(--color-text-muted); font-size: 0.8rem;">EN</a>
+                <a href="../../zh-TW/okta_automation_contact_us/contact.html" style="color: var(--color-text-muted); font-size: 0.8rem;">中</a>
+                <span style="color: var(--color-primary);">ع</span>
+            </div>
+
+            <div class="menu-toggle" id="mobile-menu-toggle">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav-overlay" id="mobile-menu-overlay">
+        <a href="../index.html" class="mobile-nav-link">الرئيسية</a>
+        <a href="../in-mold_labeling_(iml)_solutions/iml-solutions.html" class="mobile-nav-link">حلول IML</a>
+        <a href="../custom_automation_for_pp/custom-automation.html" class="mobile-nav-link">الأتمتة المخصصة</a>
+        <a href="./contact.html" class="mobile-nav-link"
+            style="color: var(--color-primary);">طلب عرض سعر</a>
+    </div>
+
+    <main>
+
+        <section class="section" style="padding-top: 8rem; padding-bottom: 2rem; text-align: center;">
+            <div class="section-header" style="text-align: center; margin: 0 auto;">
+                <h1 class="text-display" style="font-size: 3.5rem; margin-bottom: 1rem;">ابدأ رحلة <span
+                        class="text-primary">الأتمتة</span> الخاصة بك</h1>
+                <p style="color: var(--color-text-muted); font-size: 1.25rem;">
+                    أخبرنا عن مشروعك. فريق الخبراء لدينا جاهز لتصميم الحل المثالي لك.
+                </p>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top: 0;">
+            <div class="hero-content" style="align-items: start; gap: 4rem;">
+
+                <div
+                    style="background: var(--color-bg-surface); padding: 2.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-border);">
+                    <form name="contact" method="POST" action="/thanks.html" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact" />
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div class="form-group">
+                                <label class="form-label">الاسم</label>
+                                <input type="text" name="name" class="form-input" placeholder="الاسم الكامل" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">البريد الإلكتروني</label>
+                                <input type="email" name="email" class="form-input" placeholder="name@company.com"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div class="form-group">
+                                <label class="form-label">الشركة</label>
+                                <input type="text" name="company" class="form-input" placeholder="اسم الشركة">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">الهاتف</label>
+                                <input type="tel" name="phone" class="form-input" placeholder="+000 000 000 000">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">تفاصيل المشروع</label>
+                            <textarea name="message" class="form-textarea" rows="5"
+                                placeholder="صف احتياجات الأتمتة الخاصة بك..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">إرسال الطلب</button>
+                    </form>
+                </div>
+
+                <div style="padding-top: 1rem;">
+                    <div class="feature-card" style="margin-bottom: 2rem;">
+                        <h3>تواصل مباشر</h3>
+                        <div style="margin-top: 1.5rem; color: var(--color-text-main);">
+                            <p style="font-weight: bold; margin-bottom: 0.5rem; color: var(--color-text-muted);">
+                                مدير المنطقة</p>
+                            <p class="text-display" style="font-size: 1.2rem; margin-bottom: 1rem;">السيد جوشوا سو</p>
+
+                            <p style="margin-bottom: 1rem;">
+                                <a href="tel:+886910852713" style="display: flex; align-items: center; gap: 0.5rem;">
+                                    <span style="color: var(--color-primary);">📞</span> +886 910 852 713
+                                </a>
+                            </p>
+                            <p>
+                                <a href="mailto:Joshua@oktatrading.co"
+                                    style="display: flex; align-items: center; gap: 0.5rem;">
+                                    <span style="color: var(--color-primary);">✉️</span> Joshua@oktatrading.co
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card" style="border-color: transparent; background: transparent; padding: 0;">
+                        <h3>المقر العالمي</h3>
+                        <p style="margin-top: 1rem;">
+                            الطابق الأول، رقم 13، شارع شانغمينغ الثاني<br>
+                            حي شيتون، مدينة تايتشونغ 407، تايوان
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col" style="flex: 2;">
+                <div class="logo" style="margin-bottom: 1rem;">
+                    <img src="../../logo.png" alt="Logo" style="height: 32px;">
+                    <span>OKTA AUTO</span>
+                </div>
+                <p style="color: var(--color-text-muted); max-width: 400px;">
+                    إعادة تعريف الممكن من خلال الروبوتات المتقدمة وحلول الأتمتة المخصصة.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>الحلول</h4>
+                <div class="footer-links">
+                    <a href="../in-mold_labeling_(iml)_solutions/iml-solutions.html">حلول IML</a>
+                    <a href="../custom_automation_for_pp/custom-automation.html">الأتمتة المخصصة</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>الشركة</h4>
+                <div class="footer-links">
+                    <a href="../about.html">من نحن</a>
+                    <a href="../privacy-policy.html">سياسة الخصوصية</a>
+                    <a href="../terms-of-service.html">شروط الخدمة</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>تواصل معنا</h4>
+                <div class="footer-links">
+                    <a href="./contact.html">الدعم الفني</a>
+                    <a href="mailto:info@okta-auto.com">info@okta-auto.com</a>
+                </div>
+            </div>
+        </div>
+        <div
+            style="max-width: 1400px; margin: 2rem auto 0; padding: 2rem 0 0; border-top: 1px solid var(--color-border); text-align: center; color: var(--color-text-muted); font-size: 0.8rem;">
+            &copy; 2024 Okta Automation. جميع الحقوق محفوظة.
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+
+</html>
