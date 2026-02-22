@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Services - Okta Automation</title>
+
+    <meta name="description" content="Comprehensive automation solutions, from mold design to turnkey production lines." />
+    <link rel="icon" type="image/png" href="./logo.png" />
+
+    <!-- Styles -->
+    <link href="./styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="./index.html" class="logo">
+                <img src="./logo.png" alt="Okta Automation Logo">
+                <span>OKTA AUTO</span>
+            </a>
+            <nav class="nav-links">
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="./services.html" class="nav-link active">Services</a>
+                <a href="./in-mold_labeling_(iml)_solutions/iml-solutions.html" class="nav-link">IML Solutions</a>
+                <a href="./custom_automation_for_pp/custom-automation.html" class="nav-link">Custom Automation</a>
+                <a href="./okta_automation_contact_us/contact.html" class="btn btn-primary"
+                    style="padding: 0.5rem 1.5rem; font-size: 0.8rem;">Request Quote</a>
+            </nav>
+
+            <!-- Language Switcher -->
+            <div class="lang-switcher" id="lang-switcher">
+                <button class="lang-switcher-btn" aria-label="Select Language">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                    </svg>
+                </button>
+                <div class="lang-dropdown">
+                    <a href="./services.html" class="lang-option active">
+                        <span class="lang-flag">🇺🇸</span>
+                        <span>English</span>
+                    </a>
+                    <a href="./zh-TW/services.html" class="lang-option">
+                        <span class="lang-flag">🇹🇼</span>
+                        <span>繁體中文</span>
+                    </a>
+                    <a href="./ar/services.html" class="lang-option">
+                        <span class="lang-flag">🇸🇦</span>
+                        <span>العربية</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="menu-toggle" id="mobile-menu-toggle">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-menu-overlay">
+        <a href="./index.html" class="mobile-nav-link">Home</a>
+        <a href="./services.html" class="mobile-nav-link">Services</a>
+        <a href="./in-mold_labeling_(iml)_solutions/iml-solutions.html" class="mobile-nav-link">IML Solutions</a>
+        <a href="./custom_automation_for_pp/custom-automation.html" class="mobile-nav-link">Custom Automation</a>
+        <a href="./okta_automation_contact_us/contact.html" class="mobile-nav-link"
+            style="color: var(--color-primary);">Request Quote</a>
+    </div>
+
+    <main>
+        <!-- Hero Section with Animated SVG Background -->
+        <section class="hero service-hero">
+            <div class="hero-bg-animation">
+                <svg class="tech-grid-svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+                    <defs>
+                        <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                            <path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(59, 130, 246, 0.1)" stroke-width="0.1"/>
+                        </pattern>
+                    </defs>
+                    <rect width="100" height="100" fill="url(#grid)" />
+                    <g class="nodes">
+                        <circle cx="20" cy="30" r="0.5" fill="var(--color-primary)">
+                            <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite" />
+                        </circle>
+                        <circle cx="80" cy="70" r="0.5" fill="var(--color-primary)">
+                            <animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite" begin="1s" />
+                        </circle>
+                        <circle cx="50" cy="50" r="0.5" fill="var(--color-primary)">
+                            <animate attributeName="opacity" values="0;1;0" dur="5s" repeatCount="indefinite" begin="2s" />
+                        </circle>
+                    </g>
+                    <path d="M 20 30 L 50 50 L 80 70" fill="none" stroke="var(--color-primary)" stroke-width="0.05" opacity="0.2">
+                        <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="10s" repeatCount="indefinite" />
+                    </path>
+                </svg>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="text-display text-gradient">Precision<br>Services</h1>
+                    <p>
+                        From initial inquiry to final delivery, we provide end-to-end automation excellence. 
+                        Our expertise ensures your production line is optimized for maximum efficiency and reliability.
+                    </p>
+                    <div style="display: flex; gap: 1rem;">
+                        <a href="#process" class="btn btn-primary">Our Process</a>
+                        <a href="#faq" class="btn btn-outline">Common Questions</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img id="service-hero-img" src="./services-hero.png"
+                        alt="Service Excellence Placeholder">
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote to Delivery Process Flow -->
+        <section id="process" class="section">
+            <div class="section-header">
+                <h2 class="section-title text-display">Quote to <span class="text-primary">Delivery</span></h2>
+                <p style="color: var(--color-text-muted); font-size: 1.1rem;">
+                    A streamlined, transparent process designed to bring your automation vision to life.
+                </p>
+            </div>
+            <div class="process-flow">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Inquiry & Quote</h3>
+                        <p>We analyze your requirements and provide a detailed technical proposal and competitive quotation.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Design & Engineering</h3>
+                        <p>Our experts create 3D simulations and detailed engineering plans tailored to your factory space.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Manufacturing & Testing</h3>
+                        <p>Precision assembly followed by rigorous extreme load testing to ensure long-term stability.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Delivery & Setup</h3>
+                        <p>On-site installation and calibration, backed by our 18-month warranty and remote support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section">
+            <div class="section-header">
+                <h2 class="section-title text-display">Frequently Asked <span class="text-primary">Questions</span></h2>
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Why provide an 18-month+ warranty?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>This stems from our 20 years of technical accumulation and strict selection of core components (such as THK, Siemens, Festo). Every machine undergoes extreme load testing before shipment to ensure long-term, high-stability operation at the client site.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does a production changeover take?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our BCT and IML systems feature rapid positioning designs. Certain specifications (such as 13x75 and 13x100 BCTs) can share tooling and sorting modules, minimizing changeover time.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How does the remote control system benefit clients?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Through an encrypted network connection, our engineers can view robot operating parameters or perform program optimization in real-time. This means 80% of operational issues can be resolved online immediately without waiting for site visits.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do you assist with full-line configuration?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Based on budget, output, and space, we use 3D simulations for factory layout to ensure synchronization between the IMM and automation system (e.g., precise IML label insertion) and to achieve the expected cycle time.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What help can you offer to clients without production experience?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We provide a progressive service from "outsourcing to self-production." In the initial stage, we can handle contract manufacturing and quality monitoring, while assisting the client in building their own automated workshop with comprehensive technical consulting support.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What are the advantages of your mold development?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We specialize in high-cavity and short-cycle molds (e.g., 64-cavity BCT). Through advanced water-cooling path design and wear-resistant coating technologies, we effectively solve issues like eccentricity, shrinkage, and gas marks, ensuring long-term product yield.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="section" style="text-align: center; padding: 6rem 1rem;">
+            <h2 class="text-display" style="font-size: 2.5rem; margin-bottom: 2rem;">Ready to Start?</h2>
+            <a href="./okta_automation_contact_us/contact.html" class="btn btn-primary"
+                style="font-size: 1.1rem; padding: 1.2rem 3rem;">Get a Custom Quote</a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col" style="flex: 2; min-width: 300px;">
+                <div class="logo" style="margin-bottom: 1rem;">
+                    <img src="./logo.png" alt="Logo" style="height: 32px;">
+                    <span>OKTA AUTO</span>
+                </div>
+                <p style="color: var(--color-text-muted); max-width: 400px;">
+                    Redefining possible through advanced robotics and custom automation solutions.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Solutions</h4>
+                <div class="footer-links">
+                    <a href="./in-mold_labeling_(iml)_solutions/iml-solutions.html">IML Solutions</a>
+                    <a href="./custom_automation_for_pp/custom-automation.html">Custom Automation</a>
+                    <a href="./products">All Products</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Company</h4>
+                <div class="footer-links">
+                    <a href="./about.html">About Us</a>
+                    <a href="./services.html">Services</a>
+                    <a href="./privacy-policy.html">Privacy Policy</a>
+                    <a href="./terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <div class="footer-links">
+                    <a href="./okta_automation_contact_us/contact.html">Contact Support</a>
+                    <a href="mailto:info@okta-auto.com">info@okta-auto.com</a>
+                </div>
+            </div>
+        </div>
+        <div
+            style="max-width: 1400px; margin: 2rem auto 0; padding: 2rem 0 0; border-top: 1px solid var(--color-border); text-align: center; color: var(--color-text-muted); font-size: 0.8rem;">
+            &copy; 2024 Okta Automation. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

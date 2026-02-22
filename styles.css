@@ -47,6 +47,21 @@
     linear-gradient(#111 1px, transparent 1px) 0 0 / 40px 40px;
 }
 
+.img-showcase {
+  border-radius: var(--radius-md);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--color-border);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s ease;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-showcase:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: var(--color-primary);
+}
+
 /* Reset & Base */
 *,
 *::before,
@@ -617,3 +632,28 @@ img {
     /* Show hamburger */
   }
 }
+/* Services Hero & SVG Animation */
+.service-hero { position: relative; overflow: hidden; }
+.hero-bg-animation { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: 0.3; }
+.tech-grid-svg { width: 100%; height: 100%; }
+
+/* Quote to Delivery Process Flow */
+.process-flow { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem; }
+.process-step { position: relative; padding: 2rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); background: rgba(255, 255, 255, 0.02); overflow: hidden; transition: transform 0.3s ease, border-color 0.3s ease; }
+.process-step:hover { transform: translateY(-5px); border-color: var(--color-primary); background: rgba(59, 130, 246, 0.05); }
+.step-number { position: absolute; top: -1rem; right: -1rem; font-size: 6rem; font-weight: 900; color: rgba(255, 255, 255, 0.05); transition: color 0.3s ease; }
+.process-step:hover .step-number { color: rgba(59, 130, 246, 0.1); }
+.step-content h3 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--color-text-main); position: relative; z-index: 1; }
+.step-content p { color: var(--color-text-muted); line-height: 1.6; position: relative; z-index: 1; }
+
+/* FAQ Accordion */
+.faq-accordion { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem; }
+.faq-item { border: 1px solid var(--color-border); border-radius: var(--radius-sm); overflow: hidden; transition: border-color 0.3s ease; }
+.faq-item.active { border-color: var(--color-primary); }
+.faq-question { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 1.5rem; background: rgba(255, 255, 255, 0.02); border: none; color: var(--color-text-main); font-size: 1.1rem; font-weight: 600; text-align: left; cursor: pointer; transition: background 0.3s ease; }
+.faq-question:hover { background: rgba(255, 255, 255, 0.05); }
+.faq-icon { width: 24px; height: 24px; transition: transform 0.3s ease; }
+.faq-item.active .faq-icon { transform: rotate(180deg); color: var(--color-primary); }
+.faq-answer { max-height: 0; padding: 0 1.5rem; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; background: transparent; }
+.faq-item.active .faq-answer { max-height: 300px; padding: 0 1.5rem 1.5rem 1.5rem; }
+.faq-answer p { color: var(--color-text-muted); line-height: 1.6; margin: 0; }
