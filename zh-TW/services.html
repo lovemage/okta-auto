@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>服務 - Okta Automation</title>
+
+    <meta name="description" content="全面的自動化解決方案，從模具設計到整線生產。" />
+    <link rel="icon" type="image/png" href="../logo.png" />
+
+    <!-- Styles -->
+    <link href="../styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="./index.html" class="logo">
+                <img src="../logo.png" alt="Okta Automation Logo">
+                <span>OKTA AUTO</span>
+            </a>
+            <nav class="nav-links">
+                <a href="./index.html" class="nav-link">首頁</a>
+                <a href="./services.html" class="nav-link active">服務</a>
+                <a href="./in-mold_labeling_(iml)_solutions/iml-solutions.html" class="nav-link">IML 解決方案</a>
+                <a href="./custom_automation_for_pp/custom-automation.html" class="nav-link">客製化自動化</a>
+                <a href="./okta_automation_contact_us/contact.html" class="btn btn-primary"
+                    style="padding: 0.5rem 1.5rem; font-size: 0.8rem;">取得報價</a>
+            </nav>
+
+            <!-- Language Switcher -->
+            <div class="lang-switcher" id="lang-switcher">
+                <button class="lang-switcher-btn" aria-label="Select Language">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                    </svg>
+                </button>
+                <div class="lang-dropdown">
+                    <a href="../services.html" class="lang-option">
+                        <span class="lang-flag">🇺🇸</span>
+                        <span>English</span>
+                    </a>
+                    <a href="./services.html" class="lang-option active">
+                        <span class="lang-flag">🇹🇼</span>
+                        <span>繁體中文</span>
+                    </a>
+                    <a href="../ar/services.html" class="lang-option">
+                        <span class="lang-flag">🇸🇦</span>
+                        <span>العربية</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="menu-toggle" id="mobile-menu-toggle">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-menu-overlay">
+        <a href="./index.html" class="mobile-nav-link">首頁</a>
+        <a href="./services.html" class="mobile-nav-link">服務</a>
+        <a href="./in-mold_labeling_(iml)_solutions/iml-solutions.html" class="mobile-nav-link">IML 解決方案</a>
+        <a href="./custom_automation_for_pp/custom-automation.html" class="mobile-nav-link">客製化自動化</a>
+        <a href="./okta_automation_contact_us/contact.html" class="mobile-nav-link"
+            style="color: var(--color-primary);">取得報價</a>
+    </div>
+
+    <main>
+        <!-- Hero Section with Animated SVG Background -->
+        <section class="hero service-hero">
+            <div class="hero-bg-animation">
+                <svg class="tech-grid-svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+                    <defs>
+                        <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                            <path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(59, 130, 246, 0.1)" stroke-width="0.1"/>
+                        </pattern>
+                    </defs>
+                    <rect width="100" height="100" fill="url(#grid)" />
+                    <g class="nodes">
+                        <circle cx="20" cy="30" r="0.5" fill="var(--color-primary)">
+                            <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite" />
+                        </circle>
+                        <circle cx="80" cy="70" r="0.5" fill="var(--color-primary)">
+                            <animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite" begin="1s" />
+                        </circle>
+                        <circle cx="50" cy="50" r="0.5" fill="var(--color-primary)">
+                            <animate attributeName="opacity" values="0;1;0" dur="5s" repeatCount="indefinite" begin="2s" />
+                        </circle>
+                    </g>
+                    <path d="M 20 30 L 50 50 L 80 70" fill="none" stroke="var(--color-primary)" stroke-width="0.05" opacity="0.2">
+                        <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="10s" repeatCount="indefinite" />
+                    </path>
+                </svg>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="text-display text-gradient">精密<br>服務</h1>
+                    <p>
+                        從初步諮詢到最終交付，我們提供端到端的卓越自動化服務。我們的專業知識確保您的生產線針對最高效率和可靠性進行優化。
+                    </p>
+                    <div style="display: flex; gap: 1rem;">
+                        <a href="#process" class="btn btn-primary">我們的流程</a>
+                        <a href="#faq" class="btn btn-outline">常見問題</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img id="service-hero-img" src="../services-hero.png"
+                        alt="Service Excellence Placeholder">
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote to Delivery Process Flow -->
+        <section id="process" class="section">
+            <div class="section-header">
+                <h2 class="section-title text-display">從報價到 <span class="text-primary">交付</span></h2>
+                <p style="color: var(--color-text-muted); font-size: 1.1rem;">
+                    精簡、透明的流程，旨在實現您的自動化願景。
+                </p>
+            </div>
+            <div class="process-flow">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>諮詢與報價</h3>
+                        <p>我們分析您的需求，並提供詳細的技術建議和具競爭力的報價。</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>設計與工程</h3>
+                        <p>我們的專家根據您的工廠空間創建 3D 模擬和詳細的工程計劃。</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>製造與測試</h3>
+                        <p>精密組裝，隨後進行嚴格的極限負載測試，以確保長期穩定性。</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>交付與安裝</h3>
+                        <p>現場安裝和校準，並提供 18 個月的保固和遠端支援。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section">
+            <div class="section-header">
+                <h2 class="section-title text-display">常見問題 <span class="text-primary">解答</span></h2>
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>為什麼 Okta Automation 能提供優於業界的 18 個月保固？</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>這源於我們 20 年的技術沉澱與對核心零件（如 THK, Siemens, Festo）的嚴格挑選。每一台設備出廠前皆經過極限負載測試，確保在客戶端維持長期高穩定運轉。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>對於多樣化生產的客戶，更換產品規格需要多久？</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>我們的 BCT 與 IML 系統具備快速定位設計。部分規格（如 13x75 與 13x100 採血管）可共用治具與落料工裝，將換線時間降至最低。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>遠端控制系統如何實際幫助客戶解決問題？</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>透過加密的網路連線，我們的工程師可即時查看機械手運行參數或進行程式優化。這意味著 80% 的操作問題可不必等待人員出差，在線上即可立即解決。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>洋柏國際如何規劃整線配置？</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>我們會依據預算、產量與空間，利用 3D 模擬進行廠房排位，確保射出機與自動化系統動作同步（如 IML 標籤精準置入），並達成預計的循環時間。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>針對缺乏生產經驗的客戶，你們能提供哪些協助？</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>我們提供「代工轉自產」的漸進式服務。前期可由我們代工生產並監控品質，同時協助客戶建立自有的自動化車間，提供全面的技術顧問支持。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>你們模具開發的優勢在哪裡？</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>我們專精於高穴數與短循環模具（如 64 穴採血管）。透過先進的水冷路徑設計與耐磨塗層技術，有效解決偏芯、縮水與氣紋不良等問題，保證產品長期的良率。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="section" style="text-align: center; padding: 6rem 1rem;">
+            <h2 class="text-display" style="font-size: 2.5rem; margin-bottom: 2rem;">準備好開始了嗎？</h2>
+            <a href="./okta_automation_contact_us/contact.html" class="btn btn-primary"
+                style="font-size: 1.1rem; padding: 1.2rem 3rem;">取得客製化報價</a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col" style="flex: 2; min-width: 300px;">
+                <div class="logo" style="margin-bottom: 1rem;">
+                    <img src="../logo.png" alt="Logo" style="height: 32px;">
+                    <span>OKTA AUTO</span>
+                </div>
+                <p style="color: var(--color-text-muted); max-width: 400px;">
+                    通過先進的機器人技術和客製化自動化解決方案重新定義可能性。
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>解決方案</h4>
+                <div class="footer-links">
+                    <a href="./in-mold_labeling_(iml)_solutions/iml-solutions.html">IML 解決方案</a>
+                    <a href="./custom_automation_for_pp/custom-automation.html">客製化自動化</a>
+                    <a href="../products">所有產品</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>公司</h4>
+                <div class="footer-links">
+                    <a href="./about.html">關於我們</a>
+                    <a href="./services.html">服務</a>
+                    <a href="../privacy-policy.html">隱私政策</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>聯繫我們</h4>
+                <div class="footer-links">
+                    <a href="./okta_automation_contact_us/contact.html">聯繫支援</a>
+                    <a href="mailto:info@okta-auto.com">info@okta-auto.com</a>
+                </div>
+            </div>
+        </div>
+        <div
+            style="max-width: 1400px; margin: 2rem auto 0; padding: 2rem 0 0; border-top: 1px solid var(--color-border); text-align: center; color: var(--color-text-muted); font-size: 0.8rem;">
+            &copy; 2024 Okta Automation. 版權所有。
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
