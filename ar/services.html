@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>الخدمات - Okta Automation</title>
+
+    <meta name="description" content="حلول أتمتة شاملة، من تصميم القوالب إلى خطوط الإنتاج الجاهزة." />
+    <link rel="icon" type="image/png" href="../logo.png" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link href="../styles.css" rel="stylesheet" />
+    <style>
+        :root {
+            --font-arabic: 'Noto Sans Arabic', system-ui, sans-serif;
+        }
+        body {
+            font-family: var(--font-arabic);
+        }
+        .text-display {
+            font-family: var(--font-arabic);
+        }
+        .process-step {
+            text-align: right;
+        }
+        .faq-question {
+            text-align: right;
+            flex-direction: row-reverse;
+        }
+        .faq-icon {
+            margin-right: 0;
+            margin-left: 1rem;
+        }
+        .hero-text {
+            text-align: right;
+        }
+        .footer-content {
+            text-align: right;
+        }
+        .nav-links {
+            margin-right: auto;
+            margin-left: 0;
+        }
+        .lang-switcher {
+            margin-right: 1rem;
+            margin-left: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="./index.html" class="logo">
+                <img src="../logo.png" alt="Okta Automation Logo">
+                <span>OKTA AUTO</span>
+            </a>
+            <nav class="nav-links">
+                <a href="./index.html" class="nav-link">الرئيسية</a>
+                <a href="./services.html" class="nav-link active">الخدمات</a>
+                <a href="./in-mold_labeling_(iml)_solutions/iml-solutions.html" class="nav-link">حلول IML</a>
+                <a href="./custom_automation_for_pp/custom-automation.html" class="nav-link">الأتمتة المخصصة</a>
+                <a href="./okta_automation_contact_us/contact.html" class="btn btn-primary"
+                    style="padding: 0.5rem 1.5rem; font-size: 0.8rem;">طلب عرض سعر</a>
+            </nav>
+
+            <!-- Language Switcher -->
+            <div class="lang-switcher" id="lang-switcher">
+                <button class="lang-switcher-btn" aria-label="Select Language">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                    </svg>
+                </button>
+                <div class="lang-dropdown">
+                    <a href="../services.html" class="lang-option">
+                        <span class="lang-flag">🇺🇸</span>
+                        <span>English</span>
+                    </a>
+                    <a href="../zh-TW/services.html" class="lang-option">
+                        <span class="lang-flag">🇹🇼</span>
+                        <span>繁體中文</span>
+                    </a>
+                    <a href="./services.html" class="lang-option active">
+                        <span class="lang-flag">🇸🇦</span>
+                        <span>العربية</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="menu-toggle" id="mobile-menu-toggle">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-menu-overlay">
+        <a href="./index.html" class="mobile-nav-link">الرئيسية</a>
+        <a href="./services.html" class="mobile-nav-link">الخدمات</a>
+        <a href="./in-mold_labeling_(iml)_solutions/iml-solutions.html" class="mobile-nav-link">حلول IML</a>
+        <a href="./custom_automation_for_pp/custom-automation.html" class="mobile-nav-link">الأتمتة المخصصة</a>
+        <a href="./okta_automation_contact_us/contact.html" class="mobile-nav-link"
+            style="color: var(--color-primary);">طلب عرض سعر</a>
+    </div>
+
+    <main>
+        <!-- Hero Section with Animated SVG Background -->
+        <section class="hero service-hero">
+            <div class="hero-bg-animation">
+                <svg class="tech-grid-svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+                    <defs>
+                        <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                            <path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(59, 130, 246, 0.1)" stroke-width="0.1"/>
+                        </pattern>
+                    </defs>
+                    <rect width="100" height="100" fill="url(#grid)" />
+                    <g class="nodes">
+                        <circle cx="20" cy="30" r="0.5" fill="var(--color-primary)">
+                            <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite" />
+                        </circle>
+                        <circle cx="80" cy="70" r="0.5" fill="var(--color-primary)">
+                            <animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite" begin="1s" />
+                        </circle>
+                        <circle cx="50" cy="50" r="0.5" fill="var(--color-primary)">
+                            <animate attributeName="opacity" values="0;1;0" dur="5s" repeatCount="indefinite" begin="2s" />
+                        </circle>
+                    </g>
+                    <path d="M 20 30 L 50 50 L 80 70" fill="none" stroke="var(--color-primary)" stroke-width="0.05" opacity="0.2">
+                        <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="10s" repeatCount="indefinite" />
+                    </path>
+                </svg>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="text-display text-gradient">خدمات<br>دقيقة</h1>
+                    <p>
+                        من الاستفسار الأولي إلى التسليم النهائي، نقدم تميزاً في الأتمتة من البداية إلى النهاية. تضمن خبرتنا تحسين خط الإنتاج الخاص بك لتحقيق أقصى قدر من الكفاءة والموثوقية.
+                    </p>
+                    <div style="display: flex; gap: 1rem;">
+                        <a href="#process" class="btn btn-primary">عمليتنا</a>
+                        <a href="#faq" class="btn btn-outline">الأسئلة الشائعة</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img id="service-hero-img" src="../services-hero.png"
+                        alt="Service Excellence Placeholder">
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote to Delivery Process Flow -->
+        <section id="process" class="section">
+            <div class="section-header">
+                <h2 class="section-title text-display">من الاقتباس إلى <span class="text-primary">التسليم</span></h2>
+                <p style="color: var(--color-text-muted); font-size: 1.1rem;">
+                    عملية مبسطة وشفافة مصممة لتحويل رؤيتك للأتمتة إلى واقع.
+                </p>
+            </div>
+            <div class="process-flow">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>الاستفسار والاقتباس</h3>
+                        <p>نقوم بتحليل متطلباتك وتقديم مقترح تقني مفصل واقتباس تنافسي.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>التصميم والهندسة</h3>
+                        <p>يقوم خبراؤنا بإنشاء محاكاة ثلاثية الأبعاد وخطط هندسية مفصلة مصممة لمساحة مصنعك.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>التصنيع والاختبار</h3>
+                        <p>تجميع دقيق يليه اختبار حمل صارم لضمان الاستقرار على المدى الطويل.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>التسليم والإعداد</h3>
+                        <p>التركيب والمعايرة في الموقع، مدعومة بضمان لمدة 18 شهراً ودعم عن بعد.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section">
+            <div class="section-header">
+                <h2 class="section-title text-display">الأسئلة <span class="text-primary">الشائعة</span></h2>
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>لماذا تقدم Okta Automation ضماناً لمدة 18 شهراً فأكثر؟</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>ينبع هذا من تراكمنا التقني لمدة 20 عاماً واختيارنا الصارم للمكونات الأساسية (مثل THK و Siemens و Festo). تخضع كل آلة لاختبار حمل صارم قبل الشحن لضمان تشغيل طويل الأمد وعالي الاستقرار في موقع العميل.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>كم يستغرق تغيير الإنتاج؟</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>تتميز أنظمة BCT و IML لدينا بتصاميم تحديد المواقع السريعة. يمكن لبعض المواصفات (مثل 13x75 و 13x100 BCTs) مشاركة الأدوات ووحدات الفرز، مما يقلل من وقت التغيير.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>كيف يستفيد العملاء من نظام التحكم عن بعد؟</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>من خلال اتصال شبكة مشفر، يمكن لمهندسينا عرض معلمات تشغيل الروبوت أو إجراء تحسين البرنامج في الوقت الفعلي. وهذا يعني أنه يمكن حل 80% من المشكلات التشغيلية عبر الإنترنت فوراً دون انتظار زيارات الموقع.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>كيف تساعدون في تكوين الخط الكامل؟</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>بناءً على الميزانية والإنتاج والمساحة، نستخدم محاكاة ثلاثية الأبعاد لتخطيط المصنع لضمان التزامن بين IMM ونظام الأتمتة (على سبيل المثال، إدخال ملصق IML بدقة) ولتحقيق وقت الدورة المتوقع.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>ما هي المساعدة التي يمكنكم تقديمها للعملاء الذين ليس لديهم خبرة في الإنتاج؟</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>نحن نقدم خدمة تدريجية من "الاستعانة بمصادر خارجية إلى الإنتاج الذاتي". في المرحلة الأولية، يمكننا التعامل مع التصنيع التعاقدي ومراقبة الجودة، مع مساعدة العميل في بناء ورشة العمل المؤتمتة الخاصة بهم بدعم استشاري تقني شامل.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>ما هي مزايا تطوير القوالب لديكم؟</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>نحن متخصصون في القوالب ذات التجاويف العالية والدورة القصيرة (مثل 64 تجويف BCT). من خلال تصميم مسار تبريد المياه المتقدم وتقنيات الطلاء المقاومة للتآكل، نحل بفعالية مشكلات مثل اللامركزية والانكماش وعلامات الغاز، مما يضمن إنتاجية المنتج على المدى الطويل.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="section" style="text-align: center; padding: 6rem 1rem;">
+            <h2 class="text-display" style="font-size: 2.5rem; margin-bottom: 2rem;">هل أنت مستعد للبدء؟</h2>
+            <a href="./okta_automation_contact_us/contact.html" class="btn btn-primary"
+                style="font-size: 1.1rem; padding: 1.2rem 3rem;">احصل على عرض سعر مخصص</a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col" style="flex: 2; min-width: 300px;">
+                <div class="logo" style="margin-bottom: 1rem;">
+                    <img src="../logo.png" alt="Logo" style="height: 32px;">
+                    <span>OKTA AUTO</span>
+                </div>
+                <p style="color: var(--color-text-muted); max-width: 400px;">
+                    إعادة تعريف الممكن من خلال الروبوتات المتقدمة وحلول الأتمتة المخصصة.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>الحلول</h4>
+                <div class="footer-links">
+                    <a href="./in-mold_labeling_(iml)_solutions/iml-solutions.html">حلول IML</a>
+                    <a href="./custom_automation_for_pp/custom-automation.html">الأتمتة المخصصة</a>
+                    <a href="../products">جميع المنتجات</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>الشركة</h4>
+                <div class="footer-links">
+                    <a href="./about.html">من نحن</a>
+                    <a href="./services.html">الخدمات</a>
+                    <a href="../privacy-policy.html">سياسة الخصوصية</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>اتصل بنا</h4>
+                <div class="footer-links">
+                    <a href="./okta_automation_contact_us/contact.html">دعم الاتصال</a>
+                    <a href="mailto:info@okta-auto.com">info@okta-auto.com</a>
+                </div>
+            </div>
+        </div>
+        <div
+            style="max-width: 1400px; margin: 2rem auto 0; padding: 2rem 0 0; border-top: 1px solid var(--color-border); text-align: center; color: var(--color-text-muted); font-size: 0.8rem;">
+            &copy; 2024 Okta Automation. جميع الحقوق محفوظة.
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
