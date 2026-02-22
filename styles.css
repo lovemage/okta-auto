@@ -663,10 +663,18 @@ img {
 .process-section { position: relative; padding: 6rem 2rem; overflow: hidden; }
 .process-svg-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
 .process-svg-bg svg { position: absolute; top: 50%; left: 0; transform: translateY(-50%); }
-.glow-line { animation: flowGlow 3s linear infinite; }
+.glow-line {
+  stroke-dasharray: 200 1400;
+  stroke-dashoffset: 1400;
+  animation: flowGlow 6s ease-in-out infinite;
+}
 @keyframes flowGlow {
-  0% { stroke-dasharray: 0 1400; }
-  100% { stroke-dasharray: 1400 0; }
+  0% { stroke-dashoffset: 1400; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { stroke-dashoffset: -200; opacity: 0; }
+
+
 }
 .process-container { position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; }
 .process-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 2rem; }
