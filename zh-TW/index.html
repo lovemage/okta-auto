@@ -37,10 +37,26 @@
             </nav>
 
             <!-- Language Switcher -->
-            <div class="lang-switch" style="margin-left: 1rem; display: flex; gap: 0.5rem;">
-                <a href="../index.html" style="color: var(--color-text-muted); font-size: 0.8rem;">EN</a>
-                <span style="color: var(--color-primary);">中</span>
-                <a href="../ar/index.html" style="color: var(--color-text-muted); font-size: 0.8rem;">ع</a>
+            <div class="lang-switcher" id="lang-switcher">
+                <button class="lang-switcher-btn" aria-label="Select Language">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                    </svg>
+                </button>
+                <div class="lang-dropdown">
+                    <a href="../index.html" class="lang-option">
+                        <span class="lang-flag">🇺🇸</span>
+                        <span>English</span>
+                    </a>
+                    <a href="./index.html" class="lang-option active">
+                        <span class="lang-flag">🇹🇼</span>
+                        <span>繁體中文</span>
+                    </a>
+                    <a href="../ar/index.html" class="lang-option">
+                        <span class="lang-flag">🇸🇦</span>
+                        <span>العربية</span>
+                    </a>
+                </div>
             </div>
 
             <!-- Mobile Menu Button -->

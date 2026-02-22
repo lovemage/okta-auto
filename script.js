@@ -3,6 +3,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.getElementById('mobile-menu-toggle');
     const menuOverlay = document.getElementById('mobile-menu-overlay');
 
+    const langSwitcher = document.getElementById('lang-switcher');
+
+    // Language Switcher Toggle
+    if (langSwitcher) {
+        const langBtn = langSwitcher.querySelector('.lang-switcher-btn');
+        
+        // Toggle dropdown on button click
+        langBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            langSwitcher.classList.toggle('active');
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!langSwitcher.contains(e.target)) {
+                langSwitcher.classList.remove('active');
+            }
+        });
+        
+        // Close dropdown when clicking a language option
+        const langOptions = langSwitcher.querySelectorAll('.lang-option');
+        langOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                langSwitcher.classList.remove('active');
+            });
+        });
+    }
+
     // Header scroll effect
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
